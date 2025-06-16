@@ -363,6 +363,94 @@ const nextConfig = {
    - Minify CSS/JS
    - Enable compression
 
+### **Troubleshooting: Package Lock File Issues**
+
+#### **Common Amplify Build Failures**
+
+##### **Issue 1: Missing package-lock.json**
+```
+npm error The `npm ci` command can only install with an existing package-lock.json
+```
+
+**Cause**: The `package-lock.json` file is missing from the repository.
+
+**Solution**:
+```bash
+# Generate a new lock file
+npm install
+
+# Commit the new lock file
+git add package-lock.json
+git commit -m "Add missing package-lock.json for Amplify build"
+git push origin master
+```
+
+##### **Issue 2: Package Lock File Version Conflicts**
+```
+npm error Invalid: lock file's picomatch@2.3.1 does not satisfy picomatch@4.0.2
+npm error Missing: picomatch@2.3.1 from lock file
+```
+
+**Cause**: Dependency version conflicts in the lock file after updating packages.
+
+**Solution**:
+```bash
+# Remove conflicted lock file
+rm package-lock.json
+
+# Remove node_modules to ensure clean state
+rm -rf node_modules
+
+# Regenerate lock file from scratch
+npm install
+
+# Verify build works locally
+npm run build
+
+# Commit the clean lock file
+git add package-lock.json
+git commit -m "Regenerate package-lock.json to resolve dependency conflicts"
+git push origin master
+```
+
+##### **Issue 3: Legacy HTML Attributes in TypeScript**
+```
+Type error: Property 'border' does not exist on type 'DetailedHTMLProps<ImgHTMLAttributes<HTMLImageElement>'
+```
+
+**Cause**: Legacy HTML attributes like `border="0"`, `frameBorder="0"` are not valid in React/TypeScript.
+
+**Solution**:
+- Remove `border="0"` from `<img>` elements
+- Change `frameBorder="0"` to `frameBorder={0}` on `<iframe>` elements
+- Change `allowFullScreen=""` to `allowFullScreen` on `<iframe>` elements
+- Replace `<a name="X">` with `<span id="X">` for anchor points
+
+### **AWS Amplify Build Environment**
+- **Compute**: 8GiB Memory, 4vCPUs, 128GB Disk Space
+- **Node.js Version**: Latest LTS (automatically selected)
+- **Build Command**: `npm ci` (requires exact lock file match)
+- **Cache**: Environment and dependency caching enabled
+
+### **Build Process Flow**
+1. **Clone Repository** → Pull latest commit from configured branch
+2. **Environment Cache** → Restore cached dependencies if available
+3. **Backend Build** → Check for backend environment (none in our case)
+4. **Frontend Build** → 
+   - **preBuild**: `npm ci` (install dependencies)
+   - **build**: `npm run build` (create static export)
+   - **postBuild**: Deploy to CDN
+
+### **Monitoring Build Success**
+After fixing package-lock.json issues, successful builds should show:
+```
+✓ npm ci completed successfully
+✓ Creating an optimized production build
+✓ Compiled successfully
+✓ Generating static pages (30/30)
+✓ Finalizing page optimization
+```
+
 ---
 
 ## 📊 Performance Optimization
