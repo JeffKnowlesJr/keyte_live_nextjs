@@ -89,17 +89,17 @@ export default function HomePage() {
 // Put some ascii art here to show the structure of the shade down menu
 // and the main content wrapper and the menu backing
 
-      <div className="foundation-row" id="maincontentwrapper">
-        <div className="eleven columns centered">
-          <div className="foundation-row" id="">
-            <div
-              id="menu-backing"
-              className="eleven columns content"
-              style={{ height: '9em', position: 'relative', left: '46px' }}
-            ></div>
-          </div>
-        </div>
-      </div>
+      // <div className="foundation-row" id="maincontentwrapper">
+      //   <div className="eleven columns centered">
+      //     <div className="foundation-row" id="">
+      //       <div
+      //         id="menu-backing"
+      //         className="eleven columns content"
+      //         style={{ height: '9em', position: 'relative', left: '46px' }}
+      //       ></div>
+      //     </div>
+      //   </div>
+      // </div>
 
 
 
