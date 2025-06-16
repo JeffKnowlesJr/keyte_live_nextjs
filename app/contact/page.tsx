@@ -1,26 +1,78 @@
 import SubpageLayout from '@/components/layout/SubpageLayout'
 import { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Contact - Keyte Group',
-  description: 'Keyte Group - Contact',
+  title: 'Contact - Connect with Beau Keyte | Keyte Group',
+  description: 'Connect with Beau Keyte and the Keyte Group team. Learn about optimizing organizational performance and building new capacity using existing human resources.',
+  keywords: 'contact Beau Keyte, Keyte Group contact, lean consulting contact, organizational performance consulting, continuous improvement expert',
+  authors: [{ name: 'Beau Keyte' }],
+  openGraph: {
+    title: 'Contact - Connect with Beau Keyte | Keyte Group',
+    description: 'Connect with Beau Keyte and learn about optimizing organizational performance and building new capacity.',
+    url: 'https://www.keytegroup.com/contact/',
+    siteName: 'The Keyte Group',
+    images: [
+      {
+        url: 'https://www.keytegroup.com/images/treasure-chest.jpg',
+        width: 210,
+        height: 260,
+        alt: 'Realize the creative potential within your organization',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact - Keyte Group',
+    description: 'Connect with Beau Keyte for organizational performance consulting',
+    images: ['https://www.keytegroup.com/images/treasure-chest.jpg'],
+  },
+  alternates: {
+    canonical: 'https://www.keytegroup.com/contact/',
+  },
 }
 
 export default function Page() {
   return (
     <SubpageLayout>
-      <div className="foundation-row" id="maincontentwrapper">
-        <div className="eleven columns centered">
-          <div className="foundation-row" id="">
-            <div
-              id="menu-backing"
-              className="eleven columns content"
-              style={{ height: '9em', position: 'relative', left: '46px' }}
-            ></div>
-          </div>
-        </div>
-      </div>
-      
+      <Script
+        id="contact-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Keyte Group",
+            "description": "Contact information and connection details for Beau Keyte and the Keyte Group team",
+            "url": "https://www.keytegroup.com/contact/",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Keyte Group",
+              "founder": {
+                "@type": "Person",
+                "name": "Beau Keyte",
+                "jobTitle": "Founder and Continuous Improvement Expert",
+                "sameAs": "https://www.linkedin.com/in/beaukeyte"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Professional Inquiry",
+                "url": "https://www.linkedin.com/in/beaukeyte"
+              },
+              "areaServed": "Worldwide",
+              "serviceType": [
+                "Organizational Performance Optimization",
+                "Continuous Improvement Consulting", 
+                "Lean Methodology Training",
+                "Leadership Development"
+              ]
+            }
+          })
+        }}
+      />
+
       <div className="foundation-row">
         <div className="eleven columns centered">
           <div className="foundation-row">

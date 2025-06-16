@@ -9,18 +9,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <SubpageLayout>
-      <div className="foundation-row" id="maincontentwrapper">
-        <div className="eleven columns centered">
-          <div className="foundation-row" id="">
-            <div
-              id="menu-backing"
-              className="eleven columns content"
-              style={{ height: '9em', position: 'relative', left: '46px' }}
-            ></div>
-          </div>
-        </div>
-      </div>
-      
+
       <div className="foundation-row">
         <div className="eleven columns centered">
           <div className="foundation-row">

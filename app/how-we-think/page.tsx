@@ -1,26 +1,92 @@
 import SubpageLayout from '@/components/layout/SubpageLayout'
 import { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'How We Think - Keyte Group',
-  description: 'Keyte Group - How We Think',
+  title: 'How We Think - Thought Leadership & Resources | Keyte Group',
+  description: 'Explore our thought leadership on continuous improvement, lean methodology, and organizational transformation. Access articles, books, and insights from Beau Keyte.',
+  keywords: 'lean methodology thought leadership, continuous improvement insights, Beau Keyte articles, lean enterprise book, organizational transformation philosophy',
+  authors: [{ name: 'Beau Keyte' }],
+  openGraph: {
+    title: 'How We Think - Thought Leadership & Resources | Keyte Group',
+    description: 'Thought leadership on continuous improvement, lean methodology, and organizational transformation from Beau Keyte.',
+    url: 'https://www.keytegroup.com/how-we-think/',
+    siteName: 'The Keyte Group',
+    images: [
+      {
+        url: 'https://www.keytegroup.com/images/Keyte_Group_logo_large.png',
+        width: 800,
+        height: 600,
+        alt: 'The Keyte Group Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How We Think - Keyte Group',
+    description: 'Thought leadership on continuous improvement and lean methodology',
+    images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png'],
+  },
+  alternates: {
+    canonical: 'https://www.keytegroup.com/how-we-think/',
+  },
 }
 
 export default function Page() {
   return (
     <SubpageLayout>
-      <div className="foundation-row" id="maincontentwrapper">
-        <div className="eleven columns centered">
-          <div className="foundation-row" id="">
-            <div
-              id="menu-backing"
-              className="eleven columns content"
-              style={{ height: '9em', position: 'relative', left: '46px' }}
-            ></div>
-          </div>
-        </div>
-      </div>
-      
+      <Script
+        id="how-we-think-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "How We Think - Thought Leadership",
+            "description": "Collection of thought leadership content, articles, and resources on continuous improvement and lean methodology",
+            "url": "https://www.keytegroup.com/how-we-think/",
+            "author": {
+              "@type": "Person",
+              "name": "Beau Keyte",
+              "jobTitle": "Continuous Improvement Expert and Author",
+              "alumniOf": "University of Michigan",
+              "sameAs": "https://www.linkedin.com/in/beaukeyte"
+            },
+            "mainEntity": {
+              "@type": "ItemList",
+              "name": "Thought Leadership Resources",
+              "itemListElement": [
+                {
+                  "@type": "Article",
+                  "name": "Articles and Thoughts",
+                  "description": "Collection of insights on continuous improvement and lean methodology"
+                },
+                {
+                  "@type": "Book",
+                  "name": "The Complete Lean Enterprise",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Beau Keyte"
+                  },
+                  "about": "Comprehensive guide to lean enterprise transformation"
+                },
+                {
+                  "@type": "Book", 
+                  "name": "Perfecting Patient Journeys",
+                  "author": {
+                    "@type": "Person",
+                    "name": "Beau Keyte"
+                  },
+                  "about": "Lean methodology applied to healthcare processes"
+                }
+              ]
+            }
+          })
+        }}
+      />
+
       <div className="foundation-row">
         <div className="eleven columns centered">
           <div className="foundation-row">

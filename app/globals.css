@@ -248,16 +248,29 @@ img {
   color: #353128; /* Even darker on hover */
 }
 
-/* Ensure slider parent containers don't move */
-#maincontentwrapper,
+/* Ensure slider parent containers don't move - but preserve maincontentwrapper positioning */
 #maincontent,
-.foundation-row {
+.foundation-row:not(#maincontentwrapper) {
   -webkit-transform: none !important;
   -moz-transform: none !important;
   -ms-transform: none !important;
   -o-transform: none !important;
   transform: none !important;
   position: static;
+}
+
+/* Preserve the original maincontentwrapper positioning for subpages - CRITICAL for layout */
+#maincontentwrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+  /* Explicitly preserve the original positioning from default.css */
+  position: relative !important;
+  top: -9em !important;
+  z-index: -10 !important;
+  margin-bottom: -9em !important;
 }
 
 /* Specifically for slider container row */
@@ -281,8 +294,8 @@ img {
     cursor: pointer;
   }
   
-  /* Fix for any overlapping elements */
-  .foundation-row {
+  /* Fix for any overlapping elements - but preserve maincontentwrapper */
+  .foundation-row:not(#maincontentwrapper) {
     position: relative;
     z-index: 1;
   }

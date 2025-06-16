@@ -1,26 +1,93 @@
 import SubpageLayout from '@/components/layout/SubpageLayout'
 import { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Who We Served - Keyte Group',
-  description: 'Keyte Group - Who We Served',
+  title: 'Who We Served - Client Industries & Success Stories | Keyte Group',
+  description: 'Explore our diverse client portfolio across manufacturing, healthcare, service industries, and more. See how we\'ve helped organizations achieve lean transformation success.',
+  keywords: 'Keyte Group clients, lean transformation success stories, manufacturing consulting, healthcare lean, service industry improvement, client testimonials',
+  authors: [{ name: 'Beau Keyte' }],
+  openGraph: {
+    title: 'Who We Served - Client Industries & Success Stories | Keyte Group',
+    description: 'Explore our diverse client portfolio and lean transformation success stories across multiple industries.',
+    url: 'https://www.keytegroup.com/who-we-served/',
+    siteName: 'The Keyte Group',
+    images: [
+      {
+        url: 'https://www.keytegroup.com/images/Keyte_Group_logo_large.png',
+        width: 800,
+        height: 600,
+        alt: 'The Keyte Group Logo',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Who We Served - Keyte Group',
+    description: 'Diverse client portfolio and lean transformation success stories',
+    images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png'],
+  },
+  alternates: {
+    canonical: 'https://www.keytegroup.com/who-we-served/',
+  },
 }
 
 export default function Page() {
   return (
     <SubpageLayout>
-      <div className="foundation-row" id="maincontentwrapper">
-        <div className="eleven columns centered">
-          <div className="foundation-row" id="">
-            <div
-              id="menu-backing"
-              className="eleven columns content"
-              style={{ height: '9em', position: 'relative', left: '46px' }}
-            ></div>
-          </div>
-        </div>
-      </div>
-      
+      <Script
+        id="who-we-served-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Who We Served - Client Portfolio",
+            "description": "Comprehensive portfolio of clients served across diverse industries including manufacturing, healthcare, and service sectors",
+            "url": "https://www.keytegroup.com/who-we-served/",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Keyte Group",
+              "hasCredential": [
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "credentialCategory": "Professional Experience",
+                  "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Manufacturing Industry"
+                  }
+                },
+                {
+                  "@type": "EducationalOccupationalCredential", 
+                  "credentialCategory": "Professional Experience",
+                  "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Healthcare Industry"
+                  }
+                },
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "credentialCategory": "Professional Experience", 
+                  "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Service Industry"
+                  }
+                }
+              ],
+              "knowsAbout": [
+                "Manufacturing Lean Implementation",
+                "Healthcare Process Improvement", 
+                "Service Industry Optimization",
+                "Supply Chain Management",
+                "Quality Management Systems"
+              ]
+            }
+          })
+        }}
+      />
+
       <div className="foundation-row">
         <div className="eleven columns centered">
           <div className="foundation-row">

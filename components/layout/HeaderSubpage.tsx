@@ -73,41 +73,41 @@ export default function HeaderSubpage() {
         <nav id="menu" role="navigation" className="navigation hide-for-small">
           <ul id="mainNav" className="nav-bar">
             <li className="has-flyout">
-              <a href="/who-we-are/index.html" className="has-flyout">Who We Are</a>
+              <a href="/who-we-are" className="has-flyout">Who We Are</a>
               <a href="#" className="flyout-toggle"><span> </span></a>
               <ul className="flyout">
-                <li><a href="/who-we-are/beau-keyte.html">Beau Keyte</a></li>
+                <li><a href="/who-we-are/beau-keyte">Beau Keyte</a></li>
               </ul>
             </li>
             <li className="has-flyout">
-              <a href="/what-we-did/index.html" className="has-flyout">What We Did</a>
+              <a href="/what-we-did" className="has-flyout">What We Did</a>
               <a href="#" className="flyout-toggle"><span> </span></a>
               <ul className="flyout">
-                <li><a href="/what-we-did/value-stream-mapping.html">Value Stream Mapping</a></li>
-                <li><a href="/what-we-did/collaborative-learning.html">Collaborative Learning</a></li>
-                <li><a href="/what-we-did/a3-thinking.html">A3 Thinking</a></li>
-                <li><a href="/what-we-did/leadership-coaching.html">Leadership Coaching</a></li>
+                <li><a href="/what-we-did/value-stream-mapping">Value Stream Mapping</a></li>
+                <li><a href="/what-we-did/collaborative-learning">Collaborative Learning</a></li>
+                <li><a href="/what-we-did/a3-thinking">A3 Thinking</a></li>
+                <li><a href="/what-we-did/leadership-coaching">Leadership Coaching</a></li>
               </ul>
             </li>
             <li className="has-flyout">
-              <a href="/who-we-served/index.html" className="has-flyout">Who We Served</a>
+              <a href="/who-we-served" className="has-flyout">Who We Served</a>
               <a href="#" className="flyout-toggle"><span> </span></a>
               <ul className="flyout">
-                <li><a href="/who-we-served/clients-industry.html">Clients By Industry</a></li>
+                <li><a href="/who-we-served/clients-industry">Clients By Industry</a></li>
               </ul>
             </li>
             <li className="has-flyout">
-              <a href="/how-we-think/index.html" className="has-flyout">How We Think</a>
+              <a href="/how-we-think" className="has-flyout">How We Think</a>
               <a href="#" className="flyout-toggle"><span> </span></a>
               <ul className="flyout">
-                <li><a href="/how-we-think/perfecting-patient-journeys-book.html">Perfecting Patient Journeys Book</a></li>
-                <li><a href="/how-we-think/complete-lean-enterprise-book.html">Complete Lean Enterprise Book</a></li>
-                <li><a href="/how-we-think/articles-and-thoughts.html">Articles and thoughts</a></li>
-                <li><a href="/how-we-think/short-stops.html">Short Stops</a></li>
-                <li><a href="/how-we-think/remarketing-continuous-improvement.html">Remarketing Continuous Improvement</a></li>
+                <li><a href="/how-we-think/perfecting-patient-journeys-book">Perfecting Patient Journeys Book</a></li>
+                <li><a href="/how-we-think/complete-lean-enterprise-book">Complete Lean Enterprise Book</a></li>
+                <li><a href="/how-we-think/articles-and-thoughts">Articles and thoughts</a></li>
+                <li><a href="/how-we-think/short-stops">Short Stops</a></li>
+                <li><a href="/how-we-think/remarketing-continuous-improvement">Remarketing Continuous Improvement</a></li>
               </ul>
             </li>
-            <li><a href="/contact/index.html">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
         <p className="show-for-small">

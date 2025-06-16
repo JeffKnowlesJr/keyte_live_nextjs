@@ -1,25 +1,100 @@
 import SubpageLayout from '@/components/layout/SubpageLayout'
 import { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'What We Did - Keyte Group',
-  description: 'Keyte Group - What We Did',
+  title: 'What We Did - Lean Transformation Services | Keyte Group',
+  description: 'Discover our proven lean transformation services including value stream mapping, collaborative learning, A3 thinking, and leadership coaching for sustainable organizational change.',
+  keywords: 'lean transformation, value stream mapping, collaborative learning, A3 thinking, leadership coaching, organizational change, continuous improvement services',
+  authors: [{ name: 'Beau Keyte' }],
+  openGraph: {
+    title: 'What We Did - Lean Transformation Services | Keyte Group',
+    description: 'Proven lean transformation services including value stream mapping, collaborative learning, and leadership coaching for sustainable organizational change.',
+    url: 'https://www.keytegroup.com/what-we-did/',
+    siteName: 'The Keyte Group',
+    images: [
+      {
+        url: 'https://www.keytegroup.com/images/light-bulb.jpg',
+        width: 210,
+        height: 240,
+        alt: 'Light Bulb on Training Wheels - We help you think for a little while',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'What We Did - Keyte Group',
+    description: 'Lean transformation services for sustainable organizational change',
+    images: ['https://www.keytegroup.com/images/light-bulb.jpg'],
+  },
+  alternates: {
+    canonical: 'https://www.keytegroup.com/what-we-did/',
+  },
 }
 
 export default function Page() {
   return (
     <SubpageLayout>
-      <div className="foundation-row" id="maincontentwrapper">
-        <div className="eleven columns centered">
-          <div className="foundation-row" id="">
-            <div
-              id="menu-backing"
-              className="eleven columns content"
-              style={{ height: '9em', position: 'relative', left: '46px' }}
-            ></div>
-          </div>
-        </div>
-      </div>
+      <Script
+        id="what-we-did-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Lean Transformation Services",
+            "description": "Comprehensive lean transformation services to mobilize and guide organizations through sustainable change",
+            "url": "https://www.keytegroup.com/what-we-did/",
+            "provider": {
+              "@type": "Organization",
+              "name": "Keyte Group"
+            },
+            "serviceType": "Business Consulting",
+            "areaServed": "Worldwide",
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Lean Transformation Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Value Stream Mapping",
+                    "description": "Process analysis and improvement methodology"
+                  }
+                },
+                {
+                  "@type": "Offer", 
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Collaborative Learning",
+                    "description": "Team-based learning and problem-solving approaches"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service", 
+                    "name": "A3 Thinking",
+                    "description": "Structured problem-solving methodology"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Leadership Coaching", 
+                    "description": "Executive and management development for lean transformation"
+                  }
+                }
+              ]
+            }
+          })
+        }}
+      />
+
       
       <div className="foundation-row">
         <div className="eleven columns centered">

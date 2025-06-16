@@ -1,26 +1,78 @@
 import SubpageLayout from '@/components/layout/SubpageLayout'
 import { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Who We Are - Keyte Group',
-  description: 'Keyte Group - Who We Are',
+  title: 'Who We Are - Hands-On Problem Solvers | Keyte Group',
+  description: 'Meet the Keyte Group team of seasoned practitioners and consultants specializing in lean methodology, organizational transformation, and continuous improvement solutions.',
+  keywords: 'Keyte Group team, lean consultants, problem solvers, organizational transformation, continuous improvement experts, Beau Keyte',
+  authors: [{ name: 'Beau Keyte' }],
+  openGraph: {
+    title: 'Who We Are - Hands-On Problem Solvers | Keyte Group',
+    description: 'Meet the Keyte Group team of seasoned practitioners and consultants specializing in lean methodology and organizational transformation.',
+    url: 'https://www.keytegroup.com/who-we-are/',
+    siteName: 'The Keyte Group',
+    images: [
+      {
+        url: 'https://www.keytegroup.com/images/stopping-train.jpg',
+        width: 209,
+        height: 167,
+        alt: 'Heroic Efforts Mean Broken System',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Who We Are - Keyte Group',
+    description: 'Seasoned practitioners specializing in lean methodology and organizational transformation',
+    images: ['https://www.keytegroup.com/images/stopping-train.jpg'],
+  },
+  alternates: {
+    canonical: 'https://www.keytegroup.com/who-we-are/',
+  },
 }
 
 export default function Page() {
   return (
     <SubpageLayout>
-      <div className="foundation-row" id="maincontentwrapper">
-        <div className="eleven columns centered">
-          <div className="foundation-row" id="">
-            <div
-              id="menu-backing"
-              className="eleven columns content"
-              style={{ height: '9em', position: 'relative', left: '46px' }}
-            ></div>
-          </div>
-        </div>
-      </div>
-      
+      <Script
+        id="who-we-are-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "Who We Are - Keyte Group",
+            "description": "Learn about the Keyte Group team of seasoned practitioners specializing in lean methodology and organizational transformation",
+            "url": "https://www.keytegroup.com/who-we-are/",
+            "mainEntity": {
+              "@type": "Organization",
+              "name": "Keyte Group",
+              "description": "Hands-on problem solvers specializing in lean strategies, shop floor transformations, enterprise transformations, and continuous improvement",
+              "founder": {
+                "@type": "Person",
+                "name": "Beau Keyte"
+              },
+              "serviceArea": "Global",
+              "areaServed": "Worldwide",
+              "knowsAbout": [
+                "Policy deployment",
+                "Lean strategies", 
+                "Shop floor transformations",
+                "Enterprise transformations",
+                "Office and service lean",
+                "Healthcare lean",
+                "Human resource strategies",
+                "Lean costing applications",
+                "Lean metrics"
+              ]
+            }
+          })
+        }}
+      />
+
       <div className="foundation-row">
         <div className="eleven columns centered">
           <div className="foundation-row">
