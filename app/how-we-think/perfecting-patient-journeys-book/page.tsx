@@ -1,4 +1,4 @@
-import SubpageLayout from '@/components/layout/SubpageLayout'
+import { SubpageLayout } from '../../../components'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

@@ -6,11 +6,15 @@ applications:
           commands:
             - echo "Node version:" && node --version
             - echo "NPM version:" && npm --version
+            - echo "Directory structure:" && ls -la
+            - echo "Components directory:" && ls -la components/layout
             - npm cache clean --force
             - rm -rf node_modules package-lock.json
             - npm install --force
         build:
           commands:
+            - echo "Verifying tsconfig.json:" && cat tsconfig.json
+            - echo "Verifying jsconfig.json:" && cat jsconfig.json
             - npm run build
       artifacts:
         baseDirectory: out
