@@ -4,7 +4,9 @@ applications:
       phases:
         preBuild:
           commands:
-            - npm install --legacy-peer-deps --lockfile-version=2
+            - npm cache clean --force
+            - rm -rf node_modules package-lock.json
+            - npm install --legacy-peer-deps --force
         build:
           commands:
             - npm run build
