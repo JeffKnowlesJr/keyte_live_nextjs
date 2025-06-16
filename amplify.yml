@@ -4,9 +4,11 @@ applications:
       phases:
         preBuild:
           commands:
+            - echo "Node version:" && node --version
+            - echo "NPM version:" && npm --version
             - npm cache clean --force
             - rm -rf node_modules package-lock.json
-            - npm install --legacy-peer-deps --force
+            - npm install --force
         build:
           commands:
             - npm run build
