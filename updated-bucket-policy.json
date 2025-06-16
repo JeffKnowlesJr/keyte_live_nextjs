@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::keytegroup/*"
+        },
+        {
+            "Sid": "AllowCloudFrontServicePrincipal",
+            "Effect": "Allow",
+            "Principal": {"Service": "cloudfront.amazonaws.com"},
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::keytegroup/*",
+            "Condition": {"StringEquals": {"AWS:SourceArn": "arn:aws:cloudfront::159370117840:distribution/EM0S8BT5LQI3W"}}
+        }
+    ]
+} 
