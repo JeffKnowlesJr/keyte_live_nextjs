@@ -4,21 +4,12 @@ applications:
       phases:
         preBuild:
           commands:
-            - echo "Node version:" && node --version
-            - echo "NPM version:" && npm --version
-            - npm cache clean --force
-            - rm -rf node_modules package-lock.json
-            - npm install --force
-            - npm install --save typescript @types/react @types/node eslint eslint-config-next
+            - npm ci
         build:
           commands:
-            - NEXT_DISABLE_ESLINT=1 npm run build
-            - echo "Creating server trace files for Amplify deployment"
-            - node create-server-files.js
-            - ls -la out/server
-      buildType: STATIC
+            - npm run build
       artifacts:
-        baseDirectory: out
+        baseDirectory: .next
         files:
           - '**/*'
       cache:

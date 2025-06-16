@@ -1,17 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure for static export (Amplify compatible)
-  output: 'export',
+  // Configure for Amplify compatibility
   trailingSlash: true,
-  skipTrailingSlashRedirect: true,
   
-  // Image optimization for static export
+  // Image optimization
   images: {
     unoptimized: true
   },
-  
-  // Asset prefix for CDN (Amplify will handle this)
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   
   // Disable ESLint during build
   eslint: {
