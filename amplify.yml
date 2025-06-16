@@ -13,15 +13,9 @@ applications:
         build:
           commands:
             - NEXT_DISABLE_ESLINT=1 npm run build
-            - echo "Creating server trace files for static export"
-            - echo "{}" > out/required-server-files.json
-            - mkdir -p out/server
-            - echo "{}" > out/server/middleware-manifest.json
-            - echo "{}" > out/server/middleware-build-manifest.js
-            - echo "{}" > out/server/pages-manifest.json
-            - echo "{}" > out/server/app-paths-manifest.json
-            - echo "module.exports={}" > out/server/app-paths-manifest.js
-            - echo "module.exports={}" > out/server/pages-manifest.js
+            - echo "Creating server trace files for Amplify deployment"
+            - node create-server-files.js
+            - ls -la out/server
       buildType: STATIC
       artifacts:
         baseDirectory: out
