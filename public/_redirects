@@ -1,10 +1,10 @@
 # Preserve existing URL structure for SEO
-/who-we-are/index.html /who-we-are/ 301
-/what-we-do/index.html /what-we-do/ 301
-/what-we-did/index.html /what-we-did/ 301
-/who-we-served/index.html /who-we-served/ 301
-/how-we-think/index.html /how-we-think/ 301
-/contact/index.html /contact/ 301
+/who-we-are/index.html /who-we-are 301
+/what-we-do/index.html /what-we-do 301
+/what-we-did/index.html /what-we-did 301
+/who-we-served/index.html /who-we-served 301
+/how-we-think/index.html /how-we-think 301
+/contact/index.html /contact 301
 
 # Specific page redirects
 /who-we-are/beau-keyte.html /who-we-are/beau-keyte/ 301
