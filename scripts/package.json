@@ -1,0 +1,11 @@
+{
+  "name": "keyte-group-scripts",
+  "version": "1.0.0",
+  "description": "Migration scripts for Keyte Group website",
+  "scripts": {
+    "migrate": "node migrate-content.js"
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0"
+  }
+} 
