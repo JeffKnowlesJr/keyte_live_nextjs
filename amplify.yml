@@ -16,6 +16,8 @@ applications:
           commands:
             - echo "Verifying installed packages:" && npm list --depth=0
             - NEXT_DISABLE_ESLINT=1 npm run build
+            - echo "Creating empty required-server-files.json"
+            - echo "{}" > out/required-server-files.json
       artifacts:
         baseDirectory: out
         files:
