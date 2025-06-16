@@ -11,10 +11,10 @@ applications:
             - npm cache clean --force
             - rm -rf node_modules package-lock.json
             - npm install --force
+            - npm install --save typescript @types/react @types/node eslint eslint-config-next
         build:
           commands:
-            - echo "Verifying tsconfig.json:" && cat tsconfig.json
-            - echo "Verifying jsconfig.json:" && cat jsconfig.json
+            - echo "Verifying installed packages:" && npm list --depth=0
             - npm run build
       artifacts:
         baseDirectory: out
