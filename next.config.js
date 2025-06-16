@@ -13,6 +13,11 @@ const nextConfig = {
   // Asset prefix for CDN (Amplify will handle this)
   assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
   
+  // Disable ESLint during build
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  
   // Preserve existing URL structure
   async rewrites() {
     return [

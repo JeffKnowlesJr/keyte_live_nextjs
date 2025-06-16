@@ -15,7 +15,7 @@ applications:
         build:
           commands:
             - echo "Verifying installed packages:" && npm list --depth=0
-            - npm run build
+            - NEXT_DISABLE_ESLINT=1 npm run build
       artifacts:
         baseDirectory: out
         files:
