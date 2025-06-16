@@ -88,7 +88,7 @@ export default function Page() {
                                 <li className="divider"></li>
                                 <li><a href="beau-keyte" target="_self" className="">Beau Keyte</a></li>
                             </ul>
-            <img border="0" className="ccm-image-block" alt="Heroic Efforts Mean Broken System" src="/images/stopping-train.jpg" width="209" height="167" />
+            <img className="ccm-image-block" alt="Heroic Efforts Mean Broken System" src="/images/stopping-train.jpg" width="209" height="167" />
                             <p><em>Heroic efforts are a symptom of a broken system.<br /></em></p>
           </div>
 

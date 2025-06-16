@@ -87,7 +87,7 @@ export default function Page() {
                                 <li className="active"><a href="/contact/">Contact</a></li>
                                 <li className="divider"></li>
                             </ul>
-            <img border="0" className="ccm-image-block" alt="" src="/images/treasure-chest.jpg" width="210" height="260" />
+            <img className="ccm-image-block" alt="" src="/images/treasure-chest.jpg" width="210" height="260" />
                             <p><em>Realize the creative potential within your organization.</em></p>
           </div>
 

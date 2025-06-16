@@ -103,7 +103,7 @@ export default function Page() {
                                 <li className="divider"></li>
                                 <li><a href="clients-industry/" target="_self" className="">Clients By Industry</a></li>
                             </ul>
-            <img border="0" className="ccm-image-block" alt="Solutions Lie Outside The Comfort Zone" src="/images/detour-sign.jpg" width="210" height="225" />
+            <img className="ccm-image-block" alt="Solutions Lie Outside The Comfort Zone" src="/images/detour-sign.jpg" width="210" height="225" />
                             <p><i>We help you respond nimbly to change.</i></p>
           </div>
 

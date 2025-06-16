@@ -26,7 +26,7 @@ export default function Page() {
                                 <li className="divider"></li>
                                 <li className="active"><a href="clients-industry" target="_self" className="">Clients By Industry</a></li>
                             </ul>
-            <img border="0" className="ccm-image-block" alt="Innovation" src="/images/light-bulb.jpg" width="210" height="240" />
+            <img className="ccm-image-block" alt="Innovation" src="/images/light-bulb.jpg" width="210" height="240" />
                             <p><em>Cross-industry experience brings fresh perspectives to every engagement</em></p>
           </div>
 

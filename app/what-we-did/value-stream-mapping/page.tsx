@@ -29,7 +29,7 @@ export default function Page() {
                                 <li><a href="a3-thinking" target="_self" className="">A3 Thinking</a></li>
                                 <li><a href="leadership-coaching" target="_self" className="">Leadership Coaching</a></li>
                             </ul>
-            <img border="0" className="ccm-image-block" alt="Light Bulb on Training Wheels" src="/images/light-bulb.jpg" width="210" height="240" />
+            <img className="ccm-image-block" alt="Light Bulb on Training Wheels" src="/images/light-bulb.jpg" width="210" height="240" />
                             <p><em>Think for a little while.</em></p>
           </div>
 

@@ -151,7 +151,7 @@ echo "=========================================="
 echo ""
 
 print_step "Option 1: AWS Amplify Console (Recommended)"
-echo "1. Go to AWS Amplify Console: https://console.aws.amazon.com/amplify/"
+echo "1. Go to AWS Amplify Console: https://console.aws.amaznpmon.com/amplify/"
 echo "2. Click 'New app' > 'Host web app'"
 echo "3. Connect your Git repository"
 echo "4. Use the amplify.yml build settings (already configured)"

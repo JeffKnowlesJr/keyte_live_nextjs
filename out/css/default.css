@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/* CSS Document */
+h1{
+    color:#877B6C;
+    font-style:italic;
+    font-size:2.2em;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+}
+h2{
+    color:#FBB040;
+    text-transform:uppercase;
+    font-size: 1.4em;
+    margin-bottom: 0.6em;
+    margin-top: 1.2em;
+    line-height: 1.3em;
+}
+h3{
+    color:#877B6C;
+    text-transform:capitalize;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    line-height: 1.3em;
+}
+h4{
+    color:#FBB040;
+    font-size:1em;
+    margin-bottom: 0.4em;
+    margin-top: 0.8em;
+}
+h5{
+    color:#877B6C;
+    font-size:0.9em;
+    margin-bottom: 0.3em;
+    margin-top: 0.6em;
+}
+h6{
+    color:#4D4D4D;
+    font-size:0.8em;
+    margin-bottom: 0.3em;
+    margin-top: 0.5em;
+}
+p{
+    line-height:1.75em;
+    margin-bottom: 1em;
+}
+a{
+    color:#877B6C;
+}
+a:hover{
+    color:#877B6C;
+}
+.profilePic{
+    width:200px;
+    margin-left:25px;
+}
+.caption, .caption ul li{
+    font-size:.75em;
+}
+.center{
+    text-align:center;
+    }
+
+/* Image styling */
+.ccm-image-block {
+    display: block;
+    margin: 1.5em 0 1em 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Sidebar styling */
+.side-nav {
+    margin-bottom: 1.5em;
+}
+
+.three.columns.hide-for-small {
+    padding-right: 1.5em;
+}
+
+.three.columns.hide-for-small p {
+    font-style: italic;
+    color: #877B6C;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 1.4em;
+}
+
+/* Main content area improvements */
+.nine.columns {
+    padding-left: 1em;
+}
+
+/* Breadcrumb improvements */
+ul.breadcrumbs li {
+    color: #877B6C;
+}
+
+/* Button Color Overrides */
+.button {
+    background: #443f3a;
+    color: #e6e6e6;
+    border: 1px solid #e6e6e6;
+}
+.button:hover{
+    background: #333;
+}
+/* Icon overrides */
+.fc-webicon {
+    margin-bottom:0px;
+}
+/* Body */
+body{
+    background:#f2f2f2;
+    font-family:Arial,sans-serif;
+    color:#4D4D4D;
+}
+.container{
+    height:100%;        
+}
+.content{
+    margin:0px auto;
+    background:white;
+    box-shadow: 1px 1px 10px #d2d2d2;
+    padding:20px;
+}
+/* Header */
+#header{
+    margin-top: 1em;
+    overflow:visible;
+}
+#headerdots{
+float:left;
+}
+
+/* Main Navigation */
+#mainNav{
+    background: #443F3A;
+}
+.nav-bar > li > a:first-child{
+padding-left:10px !important;
+}
+
+/* Side-nav override(s) */
+ul.side-nav li a:hover{
+    padding-left:.5em;
+}
+
+/* Breadcrumbs */
+ul.breadcrumbs{
+    background:none;
+    border: none;
+}
+/* Main Content */
+#maincontentwrapper{
+    position: relative;
+    top: -9em;
+    z-index: -10;
+    margin-bottom: -9em;
+}
+#maincontent{
+    padding: 2em 3em;
+    min-height:358px;
+}
+/* Article */
+img.article{
+    width: 54%;
+    padding:.5em 0px;
+}
+img.article.right{
+    padding-left:1em;
+}
+/* Footer */
+.footerwrapper{
+    background:transparent;
+    height: 40px;
+    width:100%;
+}
+#footer{
+    background: #443F3A;
+    color: #e6e6e6;
+}
+#footer ul, #footer ul li ul{
+    list-style:none;
+}
+#footer ul li ul{
+    margin-left:10px;
+}
+#footer li{
+    font-size:.75em;
+}
+#footer a{
+    color:#e6e6e6;
+}
+#footer a:hover{
+    color:#FBB040;
+    }
+/* Testimonial */
+.testimonial > h3 {
+display: inline-block;
+text-align: right;
+border-top: 2px solid #FBB040;
+border-right: 2px solid #FBB040;
+border-left: 2px solid #FBB040;
+border-radius: 4px 4px 0px 0pc;
+padding: 0.5em;
+background: white;
+position: relative;
+left: 70%;
+top: .95em;
+font-size: 1.25em;
+font-style: italic;
+}
+.testimonial > blockquote {
+border-top: 2px solid #FBB040;
+border-left: none;
+}
+.testimonial > blockquote > cite {
+    text-align:right;
+}
+/* Nivo-slider theme overrides */
+.nivo-caption{
+    position:absolute;
+    bottom:13%;
+    padding:10px 30px;
+    width:50%;
+    font-size:1.45em;
+    background: #443F3A;
+    opacity:1;
+    box-shadow: 1px 2px 5px #443F3A;
+    text-shadow:1px 1px 1px #222;
+}
+
+.regtext A:hover
+{   color: #fbb040;
+    font-weight: bold;
+    text-decoration: underline;  }
+
+.regtext A
+{   color: #ff9900;
+    font-weight: bold;
+    text-decoration: underline; } 

@@ -111,7 +111,7 @@ export default function Page() {
                                 <li><a href="short-stops/" target="_self" className="">Short Stops</a></li>
                                 <li><a href="remarketing-continuous-improvement/" target="_self" className="">Remarketing Continuous Improvement</a></li>
                             </ul>
-            <img border="0" className="ccm-image-block" alt="Detour Ahead" src="/images/high-dive.jpg" width="210" height="221" />
+            <img className="ccm-image-block" alt="Detour Ahead" src="/images/high-dive.jpg" width="210" height="221" />
                             <p><em>Most problems are solved outside of the comfort zone.</em></p>
                             <p><i><br /></i></p>
           </div>
