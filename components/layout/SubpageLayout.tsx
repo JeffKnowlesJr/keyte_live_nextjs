@@ -1,5 +1,6 @@
 import HeaderSubpage from './HeaderSubpage'
 import FooterSubpage from './FooterSubpage'
+import Link from 'next/link'
 
 interface SubpageLayoutProps {
   children: React.ReactNode
@@ -12,40 +13,40 @@ export default function SubpageLayout({ children }: SubpageLayoutProps) {
       <nav id="topMenu" role="navigation" aria-label="Mobile navigation" className="show-for-small">
         <ul className="nav-bar">
           <li>
-            <a href="/who-we-are.html">Who We Are</a>
+            <Link href="/who-we-are">Who We Are</Link>
             <a href="#" className="flyout-toggle"><span> </span></a>
             <ul className="flyout">
-              <li><a href="/who-we-are/beau-keyte.html">Beau Keyte</a></li>
+              <li><Link href="/who-we-are/beau-keyte">Beau Keyte</Link></li>
             </ul>
           </li>
           <li>
-            <a href="/what-we-did.html">What We Did</a>
+            <Link href="/what-we-did">What We Did</Link>
             <a href="#" className="flyout-toggle"><span> </span></a>
             <ul className="flyout">
-              <li><a href="/what-we-did/value-stream-mapping.html">Value Stream Mapping</a></li>
-              <li><a href="/what-we-did/collaborative-learning.html">Collaborative Learning</a></li>
-              <li><a href="/what-we-did/a3-thinking.html">A3 Thinking</a></li>
-              <li><a href="/what-we-did/leadership-coaching.html">Leadership Coaching</a></li>
+              <li><Link href="/what-we-did/value-stream-mapping">Value Stream Mapping</Link></li>
+              <li><Link href="/what-we-did/collaborative-learning">Collaborative Learning</Link></li>
+              <li><Link href="/what-we-did/a3-thinking">A3 Thinking</Link></li>
+              <li><Link href="/what-we-did/leadership-coaching">Leadership Coaching</Link></li>
             </ul>
           </li>
           <li>
-            <a href="/who-we-served.html">Who We Have Served</a>
+            <Link href="/who-we-served">Who We Have Served</Link>
             <a href="#" className="flyout-toggle"><span> </span></a>
             <ul className="flyout">
-              <li><a href="/who-we-served/clients-by-industry.html">Clients By Industry</a></li>
+              <li><Link href="/who-we-served/clients-industry">Clients By Industry</Link></li>
             </ul>
           </li>
           <li>
-            <a href="/how-we-think.html">How we Think</a>
+            <Link href="/how-we-think">How we Think</Link>
             <a href="#" className="flyout-toggle"><span> </span></a>
             <ul className="flyout">
-              <li><a href="/how-we-think/perfecting-patient-journeys-book.html">Perfecting Patient Journeys Book</a></li>
-              <li><a href="/how-we-think/complete-lean-enterprise-book.html">Complete Lean Enterprise Book</a></li>
-              <li><a href="/how-we-think/articles-and-thoughts.html">Articles and thoughts</a></li>
-              <li><a href="/how-we-think/short-stops.html">Short Stops</a></li>
+              <li><Link href="/how-we-think/perfecting-patient-journeys-book">Perfecting Patient Journeys Book</Link></li>
+              <li><Link href="/how-we-think/complete-lean-enterprise-book">Complete Lean Enterprise Book</Link></li>
+              <li><Link href="/how-we-think/articles-and-thoughts">Articles and thoughts</Link></li>
+              <li><Link href="/how-we-think/short-stops">Short Stops</Link></li>
             </ul>
           </li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><Link href="/contact">Contact</Link></li>
         </ul>
       </nav>
 
