@@ -26,7 +26,7 @@ export default function FeaturedContent() {
           Future of People at Work conference.
           <a
             title="Remarketing Continuous Improvement"
-            href="/how-we-think/remarketing-continuous-improvement.html"
+            href="/how-we-think/complete-lean-enterprise-book/"
             aria-label="Learn more about Remarketing Continuous Improvement"
           >
             Learn more...
