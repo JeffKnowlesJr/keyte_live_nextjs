@@ -9,7 +9,7 @@ export default function FeaturedContent() {
           organizations explore strategies for improvement. <br />
           <a
             title="10-Minute Short Stops"
-            href="/how-we-think/short-stops.html"
+            href="/how-we-think/short-stops/"
             aria-label="Learn more about 10-Minute Short Stops"
           >
             Learn more...
@@ -26,7 +26,7 @@ export default function FeaturedContent() {
           Future of People at Work conference.
           <a
             title="Remarketing Continuous Improvement"
-            href="/how-we-think/remarketing-continuous-improvement.html"
+            href="/how-we-think/remarketing-continuous-improvement/"
             aria-label="Learn more about Remarketing Continuous Improvement"
           >
             Learn more...
@@ -39,7 +39,7 @@ export default function FeaturedContent() {
         <p>
           <a
             title="Complete Lean Enterprise Book"
-            href="/how-we-think/complete-lean-enterprise-book.html"
+            href="/how-we-think/complete-lean-enterprise-book/"
             aria-label="Learn more about The Complete Lean Enterprise book"
           >
             <img
@@ -57,7 +57,7 @@ export default function FeaturedContent() {
           An illuminating guide by two experts.
           <a
             title="Complete Lean Enterprise Book"
-            href="/how-we-think/complete-lean-enterprise-book.html"
+            href="/how-we-think/complete-lean-enterprise-book/"
             aria-label="Learn more about The Complete Lean Enterprise book"
           >
             Learn more...
