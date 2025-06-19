@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Configure for Amplify compatibility
+  // Configure for static export and Amplify compatibility
+  output: 'export',
   trailingSlash: true,
   
   // Image optimization
