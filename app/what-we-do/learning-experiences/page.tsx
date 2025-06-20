@@ -10,20 +10,14 @@ export default function Page() {
   return (
     <SubpageLayout>
       <div className="foundation-row">
-        <div className="twelve columns">
-          <div className="foundation-row">
-            <div className="eleven columns centered">
-              <div className="foundation-row">
-                <div id="headerdots">
-                  <img src="/images/headerdots.png" alt="" role="presentation" />
-                </div>
-                <div id="maincontent" className="eleven columns content">
-                  {/* Content will be extracted from original HTML file */}
-                  <h1>Learning Experiences</h1>
-                  <p>Content from what-we-do/learning-experiences.html will be converted here.</p>
-                </div>
-              </div>
-            </div>
+        <div id="headerdots">
+          <img src="/images/headerdots.png" alt="" role="presentation" />
+        </div>
+        <div className="eleven columns centered">
+          <div id="maincontent" className="content">
+            {/* Content will be extracted from original HTML file */}
+            <h1>Learning Experiences</h1>
+            <p>Content from what-we-do/learning-experiences.html will be converted here.</p>
           </div>
         </div>
       </div>

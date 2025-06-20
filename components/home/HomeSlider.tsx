@@ -44,12 +44,8 @@ export default function HomeSlider() {
   }, [])
 
   return (
-    <section className="foundation-row slider-section-jk" aria-label="Homepage slider">
-      <div
-        className="twelve columns slider-container-jk"
-        id="slider"
-        style={{ display: 'none' }}
-      >
+    <section aria-label="Homepage slider">
+      <div id="slider" style={{ display: 'none' }}>
         <img
           src="/images/home-page-rotating-graphic-1.jpg"
           alt="Optimize Performance - Visual representation of performance optimization concepts"

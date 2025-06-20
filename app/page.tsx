@@ -67,15 +67,13 @@ export default function HomePage() {
       />
       
       <div className="foundation-row">
+        <div id="headerdots">
+          <img src="/images/headerdots.png" alt="" role="presentation" />
+        </div>
         <div className="eleven columns centered">
-          <div className="foundation-row">
-            <div id="headerdots">
-              <img src="/images/headerdots.png" alt="" role="presentation" />
-            </div>
-            <div id="maincontent" className="eleven columns content">
-              <HomeSlider />
-              <FeaturedContent />
-            </div>
+          <div id="maincontent" className="content">
+            <HomeSlider />
+            <FeaturedContent />
           </div>
         </div>
       </div>
