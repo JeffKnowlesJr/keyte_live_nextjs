@@ -298,10 +298,12 @@ img {
     z-index: 1;
   }
   
-  /* Disable box-shadow on image blocks on mobile */
-  .ccm-image-block {
+  /* Disable box-shadow and add padding to sidebar image blocks on mobile */
+  .sidebar .ccm-image-block {
     box-shadow: none;
     border-radius: 0;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
   }
   
   /* Ensure menu button is always clickable */
