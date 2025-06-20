@@ -8,20 +8,22 @@ This is the **Next.js conversion** of the Keyte Group website, faithfully recrea
 - **Current Status**: 🔄 **In Progress** (~40% complete)
 - **Technology**: Next.js 15, React, TypeScript, Foundation CSS
 
-## 🚀 Quick Start
+3 Rules of Content Updates
+Rule #1: You may NOT update the layout
+No changes to component structure, positioning, or visual layout
+No modifications to CSS classes that affect positioning or layout
+No changes to the overall page structure or component hierarchy
+Rule #2: You may ONLY update content within existing components
+Text content, links, and data can be updated
+Menu items and navigation links can be modified
+Content within existing containers can be changed
+No structural changes to components themselves
+Rule #3: You must preserve all existing functionality
+All interactive behaviors must remain exactly the same
+Event handlers and state management cannot be changed
+Component interfaces and props must remain unchanged
+Only content values can be updated, not how they're implemented
 
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
-Visit [http://localhost:3000](http://localhost:3000) to see the development site.
 
 ## 📚 Documentation
 
@@ -93,3 +95,5 @@ All comprehensive documentation is located in the `docs/` directory:
 ---
 
 **Status**: In Development | **Progress**: ~40% Complete | **Next Phase**: Visual Fidelity Matching
+
+

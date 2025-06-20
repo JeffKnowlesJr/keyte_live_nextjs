@@ -1,59 +1,8 @@
 'use client'
 
-import { useEffect } from 'react'
+import NavigationMenu from './NavigationMenu'
 
 export default function Header() {
-  useEffect(() => {
-    // Initialize dropdown navigation hover effects
-    const initializeNavigation = () => {
-      const navItems = document.querySelectorAll('#mainNav li.has-flyout')
-      
-      navItems.forEach(item => {
-        const submenu = item.querySelector('ul.flyout') as HTMLElement
-        if (submenu) {
-          item.addEventListener('mouseenter', () => {
-            submenu.style.display = 'block'
-          })
-          item.addEventListener('mouseleave', () => {
-            submenu.style.display = 'none'
-          })
-        }
-      })
-    }
-
-    // Initialize mobile menu functionality
-    const initializeMobileMenu = () => {
-      const menuButton = document.getElementById('menuButton')
-      if (menuButton) {
-        const handleMenuClick = (e: Event) => {
-          e.preventDefault()
-          e.stopPropagation()
-          document.body.classList.toggle('active-menu')
-          console.log('Mobile menu toggled')
-        }
-        
-        menuButton.addEventListener('click', handleMenuClick)
-        menuButton.addEventListener('touchstart', handleMenuClick)
-        
-        return () => {
-          menuButton.removeEventListener('click', handleMenuClick)
-          menuButton.removeEventListener('touchstart', handleMenuClick)
-        }
-      }
-    }
-    
-    // Initialize when DOM is ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', () => {
-        initializeNavigation()
-        initializeMobileMenu()
-      })
-    } else {
-      initializeNavigation()
-      initializeMobileMenu()
-    }
-  }, [])
-
   return (
     <header id="header" className="foundation-row">
       <div className="three columns mobile-two">
@@ -70,50 +19,11 @@ export default function Header() {
           Guiding Organizational Transformation
         </h3>
 
-        <nav id="menu" role="navigation" className="navigation hide-for-small">
-          <ul id="mainNav" className="nav-bar">
-            <li className="has-flyout">
-              <a href="/who-we-are" className="has-flyout">Who We Are</a>
-              <a href="#" className="flyout-toggle"><span> </span></a>
-              <ul className="flyout">
-                <li><a href="/who-we-are/beau-keyte">Beau Keyte</a></li>
-              </ul>
-            </li>
-            <li className="has-flyout">
-              <a href="/what-we-did" className="has-flyout">What We Did</a>
-              <a href="#" className="flyout-toggle"><span> </span></a>
-              <ul className="flyout">
-                <li><a href="/what-we-did/value-stream-mapping">Value Stream Mapping</a></li>
-                <li><a href="/what-we-did/collaborative-learning">Collaborative Learning</a></li>
-                <li><a href="/what-we-did/a3-thinking">A3 Thinking</a></li>
-                <li><a href="/what-we-did/leadership-coaching">Leadership Coaching</a></li>
-              </ul>
-            </li>
-            <li className="has-flyout">
-              <a href="/who-we-served" className="has-flyout">Who We Served</a>
-              <a href="#" className="flyout-toggle"><span> </span></a>
-              <ul className="flyout">
-                <li><a href="/who-we-served/clients-industry">Clients By Industry</a></li>
-              </ul>
-            </li>
-            <li className="has-flyout">
-              <a href="/how-we-think" className="has-flyout">How We Think</a>
-              <a href="#" className="flyout-toggle"><span> </span></a>
-              <ul className="flyout">
-                <li><a href="/how-we-think/perfecting-patient-journeys-book">Perfecting Patient Journeys Book</a></li>
-                <li><a href="/how-we-think/complete-lean-enterprise-book">Complete Lean Enterprise Book</a></li>
-                <li><a href="/how-we-think/articles-and-thoughts">Articles and thoughts</a></li>
-                <li><a href="/how-we-think/short-stops">Short Stops</a></li>
-                <li><a href="/how-we-think/remarketing-continuous-improvement">Remarketing Continuous Improvement</a></li>
-              </ul>
-            </li>
-            <li><a href="/contact">Contact</a></li>
-          </ul>
-        </nav>
+        <NavigationMenu />
         <p className="show-for-small">
           <a className='menu-button button' id="menuButton" href="#menu">Menu</a>
         </p>
       </div>
-      </header>
+    </header>
   )
 }

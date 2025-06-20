@@ -199,6 +199,7 @@ img {
 /* Ensure proper column layout */
 .foundation-row .columns {
   float: left;
+  box-sizing: border-box;
 }
 
 .nine.columns {
@@ -374,4 +375,18 @@ img {
     position: relative;
     z-index: 1;
   }
+}
+
+/* Mobile menu flyout visibility */
+.flyout.show {
+  display: block !important;
+}
+
+/* Mobile menu visibility - hidden by default, shown when active-menu class is applied */
+#topMenu {
+  display: none !important;
+}
+
+body.active-menu #topMenu {
+  display: block !important;
 }
