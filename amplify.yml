@@ -9,7 +9,7 @@ applications:
           commands:
             - npm run build
       artifacts:
-        baseDirectory: out
+        baseDirectory: .next
         files:
           - '**/*'
       cache:
@@ -17,4 +17,4 @@ applications:
           - node_modules/**/*
           - .next/cache/**/*
     appRoot: .
-    platform: WEB
+    platform: WEB_COMPUTE
