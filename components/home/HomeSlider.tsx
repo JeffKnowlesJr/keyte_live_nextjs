@@ -44,9 +44,9 @@ export default function HomeSlider() {
   }, [])
 
   return (
-    <section className="foundation-row" aria-label="Homepage slider">
+    <section className="foundation-row slider-section-jk" aria-label="Homepage slider">
       <div
-        className="twelve columns"
+        className="twelve columns slider-container-jk"
         id="slider"
         style={{ display: 'none' }}
       >

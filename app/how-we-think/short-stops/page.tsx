@@ -72,7 +72,9 @@ export default function Page() {
                             
                             <p>
                                 <span id="stop-1" style={{"marginTop":"20px","marginBottom":"15px","display":"inline-block","fontSize":"x-large"}}>Short Stop #1</span>
-                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vWrZVBJc5SQ?si=RuPoVnXgX6l0JUKq" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                <div className="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vWrZVBJc5SQ?si=RuPoVnXgX6l0JUKq" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                </div>
                                 <span id="1"></span>
                                 
                                 <br /><strong>The Four Bedrock Questions You Should Be Asking</strong><br />
@@ -82,7 +84,9 @@ export default function Page() {
                             
                             <p>
                                 <span id="stop-2" style={{"marginTop":"20px","marginBottom":"15px","display":"inline-block","fontSize":"x-large"}}>Short Stop #2</span>
-                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TUcLH4IzVAs?si=KCisU3IdO9goCa6s" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                <div className="video-container">
+                                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TUcLH4IzVAs?si=KCisU3IdO9goCa6s" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                                </div>
                                 <span id="2"></span><br />
                                 <strong>Finding Hidden Capacity</strong><br />
                                 Lean thinking challenges an organization to examine how its resources are currently deployed. Until they are being used optimally, it's unlikely that adding resources is the best way to grow your organization in a sustainable way.
@@ -90,7 +94,9 @@ export default function Page() {
                             <p>To help quantify things, we use the simple metaphor of a bucket. We visualize the current "capacity" – how resources are being used in different activities --and then also visualize how they need to be used to achieve a specific operational goal. This webinar will introduce the capacity bucket, show several quick examples, and then leave you with a straightforward challenge: what do you understand about how you use your capacity today and the resource gaps that challenge your improvement efforts?</p>
                             
                             <span id="stop-3" style={{"marginTop":"20px","marginBottom":"15px","display":"inline-block","fontSize":"x-large"}}>Short Stop #3</span>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/146AWtg8wSs?si=Y4jAO083zVierI_x" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                            <div className="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/146AWtg8wSs?si=Y4jAO083zVierI_x" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                            </div>
                             <p><span id="3"></span>
                                 <br /> <strong>How Do the Best Leaders Avoid Being Overstretched?</strong><br />
                                 Most transformative efforts require that top organizational leaders become significantly involved in championing change (with the difficult work of accepting different ways of thinking and acting). When redesigning work for most workers, we show them how to first remove work that no longer makes sense or adds value. We must not forget to give leaders the same opportunity!
@@ -99,7 +105,9 @@ export default function Page() {
                             <p>As a "recovering" engineer for many years now, I spend as much time thinking about the social side of change as the technical. This webinar will focus on the social impact of change and enable you to conceptualize a socialization component to process improvement, and a simple tool to figure out who you should be talking to and what you need to talk about as you move your changes forward to better outcomes.</p>
                             
                             <span id="stop-4" style={{"marginTop":"20px","marginBottom":"15px","display":"inline-block","fontSize":"x-large"}}>Short Stop #4</span>
-                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DTkxvmaJFb0?si=_-DB0zxGNtnrFvNa" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                            <div className="video-container">
+                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DTkxvmaJFb0?si=_-DB0zxGNtnrFvNa" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                            </div>
                             <p><span id="4"></span><br />
                                 <strong>Seeing Beyond A Technical Solution</strong><br />
                                 When I began my lean thinking journey years ago, my clients were impressed that I could present seemingly brilliant solutions to their problems. And - truth be told - I was too often impressed with myself. It took me years to realize that my solutions were flawed; as a young engineering professional, I hadn't recognized the human limitations of the workplace, hadn't understood how people thought and acted within an existing organizational culture.
