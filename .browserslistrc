@@ -1,0 +1,19 @@
+# Modern browsers only - reduce polyfills and transpilation
+defaults and supports es6-module
+defaults and supports es6-module-dynamic-import
+
+# Exclude older browsers
+not IE 11
+not IE_Mob 11
+not dead
+not op_mini all
+
+# Include recent modern versions
+Chrome >= 91
+Firefox >= 90
+Safari >= 14
+Edge >= 91
+
+# Modern mobile browsers
+iOS >= 14
+Android >= 91 

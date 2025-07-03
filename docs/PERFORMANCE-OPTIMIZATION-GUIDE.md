@@ -1,268 +1,245 @@
-# PageSpeed Performance Optimization Guide
+# Next.js Performance Optimization Guide
 
-## Keyte Group Website - Performance Improvements Implemented
+## Keyte Group Website - Next.js Performance Improvements
 
 ### Overview
 
-This document outlines the comprehensive performance optimizations implemented to improve the PageSpeed Insights score for keytegroup.com and enhance user experience.
+This document outlines the comprehensive performance optimizations implemented to improve Core Web Vitals and PageSpeed Insights scores for the Next.js version of keytegroup.com.
 
-### Problem Analysis
+### Key Optimizations Implemented
 
-The initial PageSpeed Insights report showed "No Data" which typically indicates:
-
-- Insufficient traffic for Chrome User Experience Report (CrUX)
-- Performance issues preventing proper data collection
-- Large resource sizes blocking critical rendering path
-
-### Optimizations Implemented
-
-#### 1. Critical Rendering Path Optimization
+#### 1. HomeSlider Component Optimization
 
 **Before:**
+- Direct DOM manipulation causing forced reflows
+- All images loaded immediately
+- No image optimization
+- Blocking JavaScript execution
 
-- Large CSS files (96KB foundation.css) blocking render
+**After:**
+- Next.js Image component with proper priority
+- GPU-accelerated CSS animations
+- Preloaded LCP images
+- Progressive image loading
+- Server-side rendering optimization
+
+#### 2. Critical Rendering Path Optimization
+
+**Before:**
+- Large CSS files (95KB foundation.css) blocking render
 - Multiple synchronous CSS/JS loads
 - No resource prioritization
 
 **After:**
-
 - Inline critical CSS for above-the-fold content
 - Deferred non-critical CSS using `preload` + `onload`
-- Prioritized resource loading with `preload` and `dns-prefetch`
+- Resource hints (dns-prefetch, preconnect)
+- Optimized JavaScript loading strategy
 
-#### 2. JavaScript Optimization
+#### 3. Next.js Image Optimization
 
-**Before:**
+**Implemented:**
+- `priority={true}` for LCP images
+- Proper `sizes` attribute for responsive images
+- `fetchpriority="high"` for critical images
+- WebP and AVIF format support
+- Lazy loading for non-critical images
 
-- jQuery 1.7.1 (very outdated, 2011)
-- All JavaScript loaded synchronously in `<head>`
-- No error handling or fallbacks
+#### 4. Resource Loading Strategy
 
-**After:**
+**Critical Resources (Preloaded):**
+- First two slider images
+- Critical CSS files
+- jQuery library
 
-- Updated to jQuery 1.12.4 (still IE compatible)
-- Deferred non-critical JavaScript with `defer` attribute
-- Added CDN fallback for jQuery
-- Improved event handling with `addEventListener`
+**Deferred Resources:**
+- Non-critical CSS (Foundation, Nivo Slider)
+- JavaScript libraries
+- Non-critical images
 
-#### 3. Image Optimization Strategy
+### Core Web Vitals Optimizations
 
-**Before:**
+#### Largest Contentful Paint (LCP)
+- ✅ Preloaded hero images with `fetchpriority="high"`
+- ✅ Inline critical CSS
+- ✅ Next.js Image component optimization
+- ✅ Server-side rendering for first paint
 
-- Large slider images (43KB-60KB each)
-- All 6 images loaded immediately
-- No image prioritization
+#### Cumulative Layout Shift (CLS)
+- ✅ Fixed image dimensions
+- ✅ Proper aspect ratios
+- ✅ CSS containment for slider
+- ✅ Stable layout structure
 
-**After:**
+#### Interaction to Next Paint (INP)
+- ✅ Eliminated forced reflows
+- ✅ GPU-accelerated animations
+- ✅ Deferred non-critical JavaScript
+- ✅ Optimized event handlers
 
-- Preloaded first 2 critical images with `fetchpriority="high"`
-- Service worker caches remaining images progressively
-- Proper `object-fit: cover` for responsive images
+### Technical Implementation
 
-#### 4. Service Worker Implementation
+#### HomeSlider Component
+```typescript
+// Key optimizations:
+- Uses Next.js Image component with priority
+- GPU acceleration: transform: translateZ(0)
+- CSS containment: contain: layout style paint
+- Progressive loading strategy
+- Accessibility improvements
+```
 
-**Created:** `sw.js`
+#### Layout Optimization
+```typescript
+// Critical CSS inlined
+- Above-the-fold styles in <head>
+- Deferred CSS loading pattern
+- Resource hints for faster connections
+- Optimized JavaScript loading
+```
 
-- Caches static assets immediately
-- Progressive image caching
-- Offline fallback support
-- Automatic cache cleanup
-- Network-first strategy for dynamic content
+#### Next.js Configuration
+```javascript
+// Performance optimizations:
+- SWC minification
+- Tree shaking enabled
+- Optimized chunk splitting
+- Modern browser targeting
+- Gzip compression
+```
 
-#### 5. Browser Caching & Compression
+### Performance Metrics Expected
 
-**Created:** `.htaccess`
+#### Before Optimization:
+- Performance Score: ~30-50
+- LCP: >2.5s
+- CLS: >0.1
+- Critical Path: 332ms
 
-- Gzip compression for all text-based files
-- Long-term caching for static assets (1 year)
-- Proper cache headers
-- Security headers implementation
+#### After Optimization:
+- Performance Score: 85-95+
+- LCP: <1.8s
+- CLS: <0.1
+- Critical Path: <200ms
 
-#### 6. Web App Manifest
+### Monitoring and Testing
 
-**Created:** `manifest.json`
+#### Core Web Vitals Monitoring
+The layout includes built-in performance monitoring:
 
-- PWA capabilities
-- App-like experience on mobile
-- Proper theme colors and icons
+```javascript
+// Reports LCP and FID to console
+const observer = new PerformanceObserver((list) => {
+  for (const entry of list.getEntries()) {
+    if (entry.name === 'largest-contentful-paint') {
+      console.log('LCP:', entry.startTime);
+    }
+  }
+});
+```
 
-### Performance Metrics Expected Improvements
-
-#### Core Web Vitals
-
-- **LCP (Largest Contentful Paint):** Improved through critical CSS and image preloading
-- **CLS (Cumulative Layout Shift):** Fixed with proper image dimensions
-- **INP (Interaction to Next Paint):** Enhanced with optimized JavaScript
-
-#### PageSpeed Insights Metrics
-
-- **First Contentful Paint:** Faster due to critical CSS inline
-- **Speed Index:** Improved through resource prioritization
-- **Total Blocking Time:** Reduced by deferring non-critical JS
-
-### File Changes Summary
-
-#### Modified Files:
-
-1. **`index.html`**
-
-   - Added critical inline CSS
-   - Implemented resource prioritization
-   - Added service worker registration
-   - Updated jQuery version
-   - Improved JavaScript initialization
-
-2. **`css/app.css`** (existing file optimized)
-   - Already contained good slider optimizations
-   - Performance-oriented CSS structure maintained
-
-#### New Files Created:
-
-1. **`css/critical.css`** - Minified critical styles
-2. **`sw.js`** - Service worker for caching
-3. **`manifest.json`** - Web app manifest
-4. **`.htaccess`** - Server-side optimizations
-5. **`PERFORMANCE-OPTIMIZATION-GUIDE.md`** - This documentation
-
-### Additional Recommendations
-
-#### Image Optimization (Manual Steps Required)
-
-1. **Compress slider images:**
-   ```bash
-   # Use imagemagick or similar
-   convert image.jpg -quality 85 -strip image-optimized.jpg
-   ```
-2. **Generate WebP versions:**
-   ```bash
-   cwebp -q 85 image.jpg -o image.webp
-   ```
-3. **Consider lazy loading for below-fold images**
-
-#### CSS Optimization
-
-1. **Minify CSS files:**
-
-   - Foundation.css can be reduced significantly
-   - Remove unused CSS rules
-   - Consider CSS purging tools
-
-2. **CSS Loading Strategy:**
-   ```html
-   <link
-     rel="preload"
-     href="critical.css"
-     as="style"
-     onload="this.onload=null;this.rel='stylesheet'"
-   />
-   ```
-
-#### JavaScript Optimization
-
-1. **Bundle and minify JS files**
-2. **Consider modern framework migration (optional)**
-3. **Implement lazy loading for non-critical components**
-
-#### Server-Side Optimizations
-
-1. **Enable HTTP/2** (if not already enabled)
-2. **Implement CDN** for static assets
-3. **Consider server-side rendering** for critical content
-
-### Testing & Monitoring
-
-#### Tools for Testing:
-
-1. **PageSpeed Insights:** https://pagespeed.web.dev/
-2. **WebPageTest:** https://www.webpagetest.org/
-3. **Lighthouse (DevTools):** Built into Chrome
-4. **GTmetrix:** https://gtmetrix.com/
-
-#### Key Metrics to Monitor:
-
-- Core Web Vitals (LCP, CLS, INP)
-- Performance Score (aim for 90+)
-- First Contentful Paint (aim for <1.8s)
-- Total Blocking Time (aim for <200ms)
-
-### Expected Results
-
-With these optimizations, you should see:
-
-- **Performance score:** 70-90+ (from likely 30-50)
-- **LCP improvement:** 30-50% faster
-- **Reduced bounce rate** due to faster loading
-- **Better mobile experience**
-- **Improved SEO rankings**
+#### Testing Tools
+1. **PageSpeed Insights**: https://pagespeed.web.dev/
+2. **Lighthouse**: Built into Chrome DevTools
+3. **WebPageTest**: https://www.webpagetest.org/
+4. **Chrome DevTools Performance Tab**
 
 ### Deployment Checklist
 
-- [ ] Test all optimizations locally
-- [ ] Verify service worker registration works
-- [ ] Check that deferred CSS loads properly
-- [ ] Test mobile responsiveness
-- [ ] Validate manifest.json
-- [ ] Upload .htaccess file to server root
-- [ ] Test PageSpeed Insights after deployment
-- [ ] Monitor Core Web Vitals in Google Search Console
+- [ ] Test build locally: `npm run build`
+- [ ] Verify images are optimized
+- [ ] Check Core Web Vitals in DevTools
+- [ ] Test on mobile devices
+- [ ] Verify service worker (if applicable)
+- [ ] Deploy to staging environment
+- [ ] Run PageSpeed Insights after deployment
+- [ ] Monitor in Google Search Console
 
 ### Maintenance
 
-#### Monthly Tasks:
+#### Monthly:
+- Monitor Core Web Vitals in Search Console
+- Check PageSpeed Insights scores
+- Review performance metrics
 
-- Monitor PageSpeed scores
-- Check Core Web Vitals in Search Console
-- Update service worker cache version if needed
+#### Quarterly:
+- Update Next.js and dependencies
+- Optimize new images
+- Review and clean up unused CSS
 
-#### Quarterly Tasks:
+### Best Practices Going Forward
 
-- Review and update dependencies
-- Optimize new images added
-- Clean up unused CSS/JS
-
-### Technical Implementation Notes
-
-#### Service Worker Registration:
-
-```javascript
-// Registers after page load to avoid blocking
-navigator.serviceWorker.register('/sw.js')
-```
-
-#### CSS Loading Pattern:
-
-```html
-<!-- Critical CSS inline in <head> -->
-<style>
-  /* critical styles */
-</style>
-
-<!-- Non-critical CSS deferred -->
-<link
-  rel="preload"
-  href="style.css"
-  as="style"
-  onload="this.onload=null;this.rel='stylesheet'"
+#### Adding New Images:
+```typescript
+// Always use Next.js Image component
+<Image
+  src="/images/new-image.jpg"
+  alt="Descriptive alt text"
+  width={800}
+  height={600}
+  priority={isAboveFold}
+  sizes="(max-width: 768px) 100vw, 50vw"
 />
 ```
 
-#### Image Preloading:
-
-```html
-<link rel="preload" as="image" href="hero-image.jpg" fetchpriority="high" />
+#### Adding New CSS:
+```css
+/* Keep critical CSS minimal */
+/* Use CSS containment for performance */
+.container {
+  contain: layout style paint;
+}
 ```
 
-### Browser Support
+#### JavaScript Optimization:
+```typescript
+// Use Next.js Script component
+<Script 
+  src="/js/library.js" 
+  strategy="lazyOnload"
+/>
+```
 
-- Modern browsers: Full support
-- IE 11: Graceful degradation (service worker not supported)
-- Mobile browsers: Enhanced experience with manifest
+### Performance Budget
 
-### Contact for Support
+#### Target Metrics:
+- **Performance Score**: >90
+- **LCP**: <1.8s
+- **FID/INP**: <100ms
+- **CLS**: <0.1
+- **Total Bundle Size**: <500KB
+- **First Contentful Paint**: <1.2s
 
-For technical questions about these optimizations, refer to this documentation or consult with a web performance specialist.
+#### Resource Limits:
+- **JavaScript**: <200KB
+- **CSS**: <100KB
+- **Images**: <2MB total
+- **Fonts**: <100KB
+
+### Troubleshooting
+
+#### Common Issues:
+
+1. **High LCP**: 
+   - Check if hero images have `priority={true}`
+   - Verify critical CSS is inlined
+   - Ensure proper image sizing
+
+2. **High CLS**:
+   - Add explicit dimensions to images
+   - Use CSS containment
+   - Avoid layout shifts
+
+3. **High INP**:
+   - Defer non-critical JavaScript
+   - Optimize event handlers
+   - Use CSS animations instead of JavaScript
+
+### Contact
+
+For technical questions about these optimizations, refer to this documentation or consult with a Next.js performance specialist.
 
 ---
 
 _Last updated: January 2025_
-_Optimization version: 1.0.0_
+_Next.js Optimization version: 2.0.0_
