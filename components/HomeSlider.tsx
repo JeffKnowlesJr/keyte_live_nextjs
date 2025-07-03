@@ -142,6 +142,8 @@ export default function HomeSlider() {
         style={{ 
           display: 'block',
           position: 'relative',
+          width: '100%',
+          height: '350px',
           minHeight: '350px',
           backgroundColor: '#f5f5f5'
         }}
@@ -183,6 +185,34 @@ export default function HomeSlider() {
           onError={() => console.log('Image 6 failed to load')}
         />
       </div>
+      
+      <style jsx>{`
+        #slider {
+          width: 100% !important;
+          box-sizing: border-box;
+        }
+        
+        #slider img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover !important;
+          object-position: center !important;
+        }
+        
+        @media (max-width: 768px) {
+          #slider {
+            height: 250px !important;
+            min-height: 250px !important;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          #slider {
+            height: 200px !important;
+            min-height: 200px !important;
+          }
+        }
+      `}</style>
     </section>
   )
 } 
