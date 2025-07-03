@@ -189,6 +189,7 @@ export default function HomeSlider() {
       <style jsx>{`
         #slider {
           width: 100% !important;
+          height: 400px !important;
           box-sizing: border-box;
         }
         
@@ -199,7 +200,21 @@ export default function HomeSlider() {
           object-position: center !important;
         }
         
+        @media (max-width: 1024px) {
+          #slider {
+            height: 350px !important;
+            min-height: 350px !important;
+          }
+        }
+        
         @media (max-width: 768px) {
+          #slider {
+            height: 300px !important;
+            min-height: 300px !important;
+          }
+        }
+        
+        @media (max-width: 640px) {
           #slider {
             height: 250px !important;
             min-height: 250px !important;
@@ -210,6 +225,13 @@ export default function HomeSlider() {
           #slider {
             height: 200px !important;
             min-height: 200px !important;
+          }
+        }
+        
+        @media (max-width: 320px) {
+          #slider {
+            height: 125px !important;
+            min-height: 125px !important;
           }
         }
       `}</style>
