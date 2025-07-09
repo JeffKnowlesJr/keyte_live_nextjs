@@ -93,7 +93,7 @@ export default function Page() {
                   </li>
                   <li>
                     <a
-                      href="/complete-lean-enterprise-book"
+                      href="/how-we-think/complete-lean-enterprise-book"
                       target="_self"
                       className=""
                     >
@@ -102,7 +102,7 @@ export default function Page() {
                   </li>
                   <li>
                     <a
-                      href="/articles-and-thoughts"
+                      href="/how-we-think/articles-and-thoughts"
                       target="_self"
                       className=""
                     >
@@ -121,18 +121,13 @@ export default function Page() {
                     </ul>
                   </li>
                   <li>
-                    <a href="short-stops" target="_self" className="">
+                    <a href="/how-we-think/short-stops" target="_self" className="">
                       Short Stops
                     </a>
-                    <ul>
-                      <li>
-                        <a href="#" target="_self" className=""></a>
-                      </li>
-                    </ul>
                   </li>
                   <li>
                     <a
-                      href="remarketing-continuous-improvement"
+                      href="/how-we-think/remarketing-continuous-improvement"
                       target="_self"
                       className=""
                     >
@@ -159,7 +154,7 @@ export default function Page() {
                     <a href="/">Home</a>
                   </li>
                   <li>
-                    <a href="/">How We Think</a>
+                    <a href="/how-we-think">How We Think</a>
                   </li>
                   <li>
                     <a href="#">Short Stops</a>

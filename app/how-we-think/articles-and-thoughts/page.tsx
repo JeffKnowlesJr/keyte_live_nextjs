@@ -249,15 +249,15 @@ export default function Page() {
                   <h3>Related Resources</h3>
                   <ul className="sidebar-nav">
                     <li>
-                      <a href="short-stops">Short Stops</a>
+                      <a href="/how-we-think/short-stops">Short Stops</a>
                     </li>
                     <li>
-                      <a href="complete-lean-enterprise-book">
+                      <a href="/how-we-think/complete-lean-enterprise-book">
                         Complete Lean Enterprise
                       </a>
                     </li>
                     <li>
-                      <a href="perfecting-patient-journeys-book">
+                      <a href="/how-we-think/perfecting-patient-journeys-book">
                         Perfecting Patient Journeys
                       </a>
                     </li>
@@ -265,7 +265,7 @@ export default function Page() {
                   <h3>Featured Article</h3>
                   <div className="featured-box">
                     <h4>
-                      <a href="strategic-stockpile">Strategic Stockpile</a>
+                      <a href="/how-we-think/articles-and-thoughts/strategic-stockpile">Strategic Stockpile</a>
                     </h4>
                     <p>
                       Building organizational resilience through strategic

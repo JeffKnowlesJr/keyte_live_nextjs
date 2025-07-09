@@ -1,33 +1,27 @@
-# Preserve existing URL structure for SEO
-/who-we-are/index.html /who-we-are 301
-/what-we-do/index.html /what-we-do 301
-/what-we-did/index.html /what-we-did 301
-/who-we-served/index.html /who-we-served 301
-/how-we-think/index.html /how-we-think 301
-/contact/index.html /contact 301
+# Canonicalization - redirect non-www to www
+https://keytegroup.com/* https://www.keytegroup.com/:splat 301!
 
-# Specific page redirects
-/who-we-are/beau-keyte.html /who-we-are/beau-keyte/ 301
-/who-we-are/drew-locher.html /who-we-are/drew-locher/ 301
-/who-we-are/our-associates.html /who-we-are/our-associates/ 301
+# Remove trailing slashes for consistency
+/*/ /:splat 301!
 
-/what-we-do/lean-enterprise-transformation.html /what-we-do/lean-enterprise-transformation/ 301
-/what-we-do/leadership-coaching.html /what-we-do/leadership-coaching/ 301
-/what-we-do/learning-experiences.html /what-we-do/learning-experiences/ 301
+# Remove .html extensions
+/*.html /:splat 301!
 
-/what-we-did/case-studies.html /what-we-did/case-studies/ 301
-/what-we-did/testimonials.html /what-we-did/testimonials/ 301
+# Remove /index redirects
+/index / 301!
 
-/who-we-served/clients-by-industry.html /who-we-served/clients-by-industry/ 301
+# Specific page redirects for SEO preservation
+/who-we-are/beau-keyte.html /who-we-are/beau-keyte 301!
+/who-we-are/drew-locher.html /who-we-are/drew-locher 301!
+/who-we-are/our-associates.html /who-we-are/our-associates 301!
 
-/how-we-think/perfecting-patient-journeys-book.html /how-we-think/perfecting-patient-journeys-book/ 301
-/how-we-think/complete-lean-enterprise-book.html /how-we-think/complete-lean-enterprise-book/ 301
-/how-we-think/articles-and-thoughts.html /how-we-think/articles-and-thoughts/ 301
-/how-we-think/short-stops.html /how-we-think/short-stops/ 301
-/how-we-think/remarketing-continuous-improvement.html /how-we-think/remarketing-continuous-improvement/ 301
+/who-we-served/clients-by-industry.html /who-we-served/clients-industry 301!
 
-# Fallback for any missed HTML files
-/*.html /:splat/ 301
+/how-we-think/perfecting-patient-journeys-book.html /how-we-think/perfecting-patient-journeys-book 301!
+/how-we-think/complete-lean-enterprise-book.html /how-we-think/complete-lean-enterprise-book 301!
+/how-we-think/articles-and-thoughts.html /how-we-think/articles-and-thoughts 301!
+/how-we-think/short-stops.html /how-we-think/short-stops 301!
+/how-we-think/remarketing-continuous-improvement.html /how-we-think/remarketing-continuous-improvement 301!
 
-# SPA fallback
+# SPA fallback for Next.js
 /* /index.html 200

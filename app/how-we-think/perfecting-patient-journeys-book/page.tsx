@@ -304,7 +304,7 @@ export default function Page() {
                   <h3>Related Resources</h3>
                   <ul className="sidebar-nav">
                     <li>
-                      <a href="complete-lean-enterprise-book">
+                      <a href="/how-we-think/complete-lean-enterprise-book">
                         Complete Lean Enterprise
                       </a>
                     </li>

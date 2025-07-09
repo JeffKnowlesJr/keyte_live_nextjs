@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://keytegroup.com/sitemap.xml
+# Ensure proper canonicalization
+Disallow: /index.html
+Disallow: /*.html$
+
+# Sitemap
+Sitemap: https://www.keytegroup.com/sitemap.xml

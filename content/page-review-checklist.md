@@ -35,8 +35,6 @@ This document lists all pages that need to be reviewed and updated against the c
 - [x] **Collaborative Learning** (`app/what-we-did/collaborative-learning/page.tsx` ↔ `content/deck v.2/what-we-did/sub-pages/collaborative-learning.md`)
 - [x] **Leadership Coaching** (`app/what-we-did/leadership-coaching/page.tsx` ↔ `content/deck v.2/what-we-did/sub-pages/leadership-coaching.md`)
 - [x] **Value Stream Mapping** (`app/what-we-did/value-stream-mapping/page.tsx` ↔ `content/deck v.2/what-we-did/sub-pages/value-stream-mapping.md`)
-- [x] **Testimonials** (`app/what-we-did/testimonials/page.tsx` ↔ _No content deck file found_)
-- [x] **Case Studies** (`app/what-we-did/case-studies/page.tsx` ↔ _No content deck file found_)
 
 ### How We Think Section
 
@@ -126,8 +124,8 @@ For each page, check the following:
 
 ## 📊 Progress Tracking
 
-- **Total Pages**: 21
-- **Completed**: 21
+- **Total Pages**: 19
+- **Completed**: 19
 - **Remaining**: 0
 - **Progress**: 100%
 
