@@ -1,14 +1,74 @@
 import { SubpageLayout } from '../../../components'
 import { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Articles and Thoughts - Keyte Group',
-  description: 'Keyte Group - Articles and Thoughts',
+  description:
+    'Links to articles, blog posts, webinars, etc that contain ideas and thoughts to make your business better by serving customers and clients more efficiently and effectively.',
+  keywords:
+    'Transformational thinking, opinion pieces, articles, blog posts, Beau Keyte, supply chain, lean principles, scientific thinking, leadership standard work, healthcare, pandemic response',
+  authors: [{ name: 'Beau Keyte' }],
+  openGraph: {
+    title: 'Articles and Thoughts - Keyte Group',
+    description:
+      'Links to articles, blog posts, webinars, etc that contain ideas and thoughts to make your business better by serving customers and clients more efficiently and effectively.',
+    url: 'https://www.keytegroup.com/how-we-think/articles-and-thoughts/',
+    siteName: 'The Keyte Group',
+    images: [
+      {
+        url: 'https://www.keytegroup.com/images/Keyte_Group_logo_large.png',
+        width: 800,
+        height: 600,
+        alt: 'The Keyte Group Logo'
+      }
+    ],
+    locale: 'en_US',
+    type: 'article'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Articles and Thoughts - Keyte Group',
+    description:
+      'Transformational thinking and practical insights for business improvement.',
+    images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']
+  },
+  alternates: {
+    canonical: 'https://www.keytegroup.com/how-we-think/articles-and-thoughts/'
+  }
 }
 
 export default function Page() {
   return (
     <SubpageLayout>
+      <Script
+        id="articles-and-thoughts-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Articles and Thoughts',
+            description:
+              'Links to articles, blog posts, webinars, etc that contain ideas and thoughts to make your business better by serving customers and clients more efficiently and effectively.',
+            author: {
+              '@type': 'Person',
+              name: 'Beau Keyte'
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Keyte Group',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://www.keytegroup.com/images/Keyte_Group_logo_large.png'
+              }
+            },
+            url: 'https://www.keytegroup.com/how-we-think/articles-and-thoughts/',
+            mainEntityOfPage:
+              'https://www.keytegroup.com/how-we-think/articles-and-thoughts/'
+          })
+        }}
+      />
       <div className="foundation-row">
         <div id="headerdots">
           <img src="/images/headerdots.png" alt="" role="presentation" />
@@ -19,88 +79,198 @@ export default function Page() {
               <div className="twelve columns">
                 <div className="eight columns">
                   <div id="breadcrumbs">
-                    <a href="/index">Home</a> &gt; <a href="index">How We Think</a> &gt; <span className="current">Articles and Thoughts</span>
+                    <a href="/index">Home</a> &gt;{' '}
+                    <a href="index">How We Think</a> &gt;{' '}
+                    <span className="current">Articles and Thoughts</span>
                   </div>
                   <h1>Articles and Thoughts</h1>
-                  <p>Over the years, we shared our insights and experiences through various articles, presentations, and thought pieces. These resources reflect our practical approach to lean thinking and organizational improvement.</p>
-                  <h2>Featured Articles</h2>
-                  <div className="article-preview">
-                    <h3><a href="articles-and-thoughts/strategic-stockpile">Strategic Stockpile: Building Organizational Resilience</a></h3>
-                    <p className="article-meta">Published in Lean Management Journal</p>
-                    <p>Organizations that thrive during disruption maintain strategic stockpiles - not just of inventory, but of capability, knowledge, and adaptability. This article explores how to build organizational resilience through strategic preparation.</p>
-                    <p><a href="articles-and-thoughts/strategic-stockpile">Read more →</a></p>
-                  </div>
-                  <div className="article-preview">
-                    <h3>The Evolution of Value Stream Mapping</h3>
-                    <p className="article-meta">Industry Week, 2018</p>
-                    <p>Value stream mapping has evolved far beyond its manufacturing origins. We explore how this powerful tool adapted to service industries, healthcare, and knowledge work, maintaining its core principles while expanding its application.</p>
-                  </div>
-                  <div className="article-preview">
-                    <h3>Leadership in the Age of Continuous Change</h3>
-                    <p className="article-meta">Harvard Business Review Online, 2017</p>
-                    <p>Traditional command-and-control leadership models struggle in today's rapidly changing environment. This piece examines how leaders can develop the coaching and mentoring skills needed to guide organizations through continuous transformation.</p>
-                  </div>
-                  <div className="article-preview">
-                    <h3>Beyond Waste Elimination: Creating Flow</h3>
-                    <p className="article-meta">Lean Enterprise Institute, 2016</p>
-                    <p>While eliminating waste is important, the real power of lean thinking lies in creating flow. We discuss how organizations can move beyond waste reduction to build systems that naturally flow toward value creation.</p>
-                  </div>
-                  <h2>Key Themes</h2>
-                  <p>Our articles and thoughts consistently explored several key themes:</p>
-                  <h3>Practical Application</h3>
-                  <p>We focused on real-world application rather than theoretical concepts. Every article included practical examples and actionable insights that readers could immediately apply in their organizations.</p>
-                  <h3>People-Centered Approach</h3>
-                  <p>Technology and tools are important, but sustainable improvement always comes through people. Our writing emphasized engaging employees, developing capability, and creating cultures of continuous improvement.</p>
-                  <h3>Systems Thinking</h3>
-                  <p>Individual improvements are valuable, but transformational results require systems thinking. We explored how to see connections, understand interdependencies, and optimize whole systems rather than individual parts.</p>
-                  <h3>Leadership Development</h3>
-                  <p>Successful lean transformations require leaders who can coach, mentor, and guide rather than command and control. Many of our articles focused on developing these essential leadership capabilities.</p>
-                  <h2>Industry Publications</h2>
-                  <p>Our work appeared in various industry publications and forums:</p>
+                  <h3>Guiding Organizational Transformation</h3>
+
+                  <h2>TRANSFORMATIONAL THINKING</h2>
+
+                  <p>
+                    <a
+                      href="https://www.marketwatch.com/story/those-moldy-masks-in-the-strategic-stockpile-reflect-a-supply-chain-problem-these-5-steps-can-fix-that-before-the-next-crisis-strikes-2020-05-29"
+                      target="_blank"
+                    >
+                      OPINION: Those moldy masks in the strategic stockpile
+                      reflect a supply-chain problem — these 5 steps can fix
+                      that before the next crisis strikes
+                    </a>
+                    : Opinion piece, May 29, 2020
+                  </p>
                   <ul>
-                    <li><strong>Lean Enterprise Institute</strong> - Regular contributor to LEI publications and online resources</li>
-                    <li><strong>Industry Week</strong> - Manufacturing and operations improvement articles</li>
-                    <li><strong>Harvard Business Review</strong> - Leadership and organizational development pieces</li>
-                    <li><strong>Quality Progress</strong> - Quality management and continuous improvement articles</li>
-                    <li><strong>Healthcare Financial Management</strong> - Healthcare-specific lean applications</li>
+                    <li>
+                      Let's build a public-private National Pandemic Response
+                      Coalition and do drills, just like the military does with
+                      war games.
+                    </li>
                   </ul>
-                  <h2>Speaking Engagements</h2>
-                  <p>In addition to written articles, we shared our thoughts through speaking engagements at conferences and industry events. These presentations allowed for deeper exploration of concepts and direct interaction with practitioners.</p>
-                  <p>Key speaking topics included:</p>
+
+                  <p>
+                    <a
+                      href="https://www.industryweek.com/operations/article/21127903/lean-in-a-time-of-social-distancing"
+                      target="_blank"
+                    >
+                      Rethinking lean in a time of social distancing
+                    </a>
+                    : Article for Industry Week, April 3, 2020
+                  </p>
                   <ul>
-                    <li>Value Stream Mapping in Service Industries</li>
-                    <li>Building Lean Leadership Capability</li>
-                    <li>Sustaining Continuous Improvement</li>
-                    <li>A3 Thinking for Problem Solving</li>
-                    <li>Creating Learning Organizations</li>
+                    <li>
+                      Process and system designs need to adapt to keep workers
+                      safe.
+                    </li>
                   </ul>
-                  <div className="testimonial-box">
-                    <blockquote>
-                      "Beau's articles always provided practical insights we could immediately apply. His writing style made complex concepts accessible and actionable."
-                    </blockquote>
-                    <cite>— Industry Week Reader</cite>
-                  </div>
-                  <h2>Continuing the Conversation</h2>
-                  <p>While Keyte Group has transitioned from active consulting to sharing knowledge and giving back, these articles and thoughts continue to provide value to practitioners worldwide. The principles and practices we explored remain as relevant today as when they were first written.</p>
-                  <p>We encourage readers to adapt these insights to their unique situations, experiment with the concepts, and continue the conversation within their own organizations and professional communities.</p>
+
+                  <p>
+                    <a
+                      href="https://www.industryweek.com/operations/continuous-improvement/article/21127325/playing-the-lean-long-game"
+                      target="_blank"
+                    >
+                      Playing the long lean game
+                    </a>
+                    : Article for Industry Week, March 27, 2020
+                  </p>
+                  <ul>
+                    <li>
+                      As the market changes quickly, now is the time for some
+                      serious scientific thinking.
+                    </li>
+                  </ul>
+
+                  <p>
+                    <a
+                      href="https://www.industryweek.com/leadership/article/22025574/are-you-sending-the-wrong-message-with-leadership-standard-work"
+                      target="_blank"
+                    >
+                      Are You Sending the Wrong Message with 'Leadership
+                      Standard Work'?
+                    </a>
+                    : Article for Industry Week, May 1, 2018
+                  </p>
+                  <ul>
+                    <li>
+                      No need to invoke lean language. Just say you want to have
+                      great leadership inside your transformation and find a
+                      path that makes sense.
+                    </li>
+                  </ul>
+
+                  <h2>HEALTHCARE</h2>
+
+                  <p>
+                    <a
+                      href="http://www.huffingtonpost.com/beau-keyte/the-silent-killer-of-health_b_3893269.html"
+                      target="_blank"
+                    >
+                      Silent Killer of Health Care Transformation: Overburdened
+                      by Too Many Choices
+                    </a>
+                    : Huffington Post blog, Sept 9, 2013
+                  </p>
+                  <ul>
+                    <li>
+                      Current overburden and ways for leaders to find capacity
+                      support change initiatives.
+                    </li>
+                  </ul>
+
+                  <p>
+                    <a
+                      href="http://www.huffingtonpost.com/beau-keyte/losing-patients-what-heal_b_3749464.html"
+                      target="_blank"
+                    >
+                      Losing Patients: What Healthcare Organizations have to do
+                      to Survive Inevitable Changes
+                    </a>
+                    : Huffington Post blog, August 13, 2013
+                  </p>
+                  <ul>
+                    <li>
+                      The conflicts of healthcare two different worlds: pre- and
+                      post- healthcare reform.
+                    </li>
+                  </ul>
+
+                  <p>
+                    <a
+                      href="http://www.huffingtonpost.com/luis-haro-md/patient-care_b_3118072.html"
+                      target="_blank"
+                    >
+                      Patients First
+                    </a>
+                    : blog post by Luis Haro, MD, April 29, 2013
+                  </p>
+                  <ul>
+                    <li>
+                      Haro discusses his healthcare initiative journey of
+                      focusing on patient outcomes and how it has made a
+                      difference to his patients and his organization.
+                    </li>
+                  </ul>
+
+                  <p>
+                    <a
+                      href="http://www.healthcarefinancenews.com/news/reading-list-beau-keyte-and-jim-luckman?page=0"
+                      target="_blank"
+                    >
+                      Talking about Perfecting Patient Journeys
+                    </a>
+                    : interview with Jim Luckman for Healthcare Finance News,
+                    April 25, 2013
+                  </p>
+                  <ul>
+                    <li>
+                      Jim Luckman discusses key takeaways from Perfecting
+                      Patient Journeys and describes the benefits of lean for
+                      the health care industry.
+                    </li>
+                  </ul>
                 </div>
                 <div className="four columns sidebar">
                   <div className="ccm-image-block">
-                    <img src="/images/light-bulb.jpg" alt="Ideas and Insights" />
-                    <p style={{"textAlign":"center","fontStyle":"italic","marginTop":"10px","lineHeight":"1.4"}}>
-                      Practical insights for continuous improvement practitioners
+                    <img
+                      src="/images/light-bulb.jpg"
+                      alt="Ideas and Insights"
+                    />
+                    <p
+                      style={{
+                        textAlign: 'center',
+                        fontStyle: 'italic',
+                        marginTop: '10px',
+                        lineHeight: '1.4'
+                      }}
+                    >
+                      Practical insights for continuous improvement
+                      practitioners
                     </p>
                   </div>
                   <h3>Related Resources</h3>
                   <ul className="sidebar-nav">
-                    <li><a href="short-stops">Short Stops</a></li>
-                    <li><a href="complete-lean-enterprise-book">Complete Lean Enterprise</a></li>
-                    <li><a href="perfecting-patient-journeys-book">Perfecting Patient Journeys</a></li>
+                    <li>
+                      <a href="short-stops">Short Stops</a>
+                    </li>
+                    <li>
+                      <a href="complete-lean-enterprise-book">
+                        Complete Lean Enterprise
+                      </a>
+                    </li>
+                    <li>
+                      <a href="perfecting-patient-journeys-book">
+                        Perfecting Patient Journeys
+                      </a>
+                    </li>
                   </ul>
                   <h3>Featured Article</h3>
                   <div className="featured-box">
-                    <h4><a href="articles-and-thoughts/strategic-stockpile">Strategic Stockpile</a></h4>
-                    <p>Building organizational resilience through strategic preparation and capability development.</p>
+                    <h4>
+                      <a href="strategic-stockpile">Strategic Stockpile</a>
+                    </h4>
+                    <p>
+                      Building organizational resilience through strategic
+                      preparation and capability development.
+                    </p>
                   </div>
                 </div>
               </div>

@@ -1,14 +1,79 @@
 import { SubpageLayout } from '../../../components'
 import { Metadata } from 'next'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Complete Lean Enterprise Book - Keyte Group',
-  description: 'Keyte Group - Complete Lean Enterprise Book',
+  title: 'The Complete Lean Enterprise, 2nd edition - Keyte Group',
+  description:
+    'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services," co-authored by Beau Keyte and Drew Locher. This updated version provides a step-by-step approach for implementing Lean initiatives in service and office environments.',
+  keywords:
+    'The Complete Lean Enterprise, 2nd edition, Beau Keyte, Drew Locher, Lean initiatives, service industry, office environments, organizational culture, continuous improvement, value stream mapping',
+  authors: [{ name: 'Beau Keyte' }],
+  openGraph: {
+    title: 'The Complete Lean Enterprise, 2nd edition - Keyte Group',
+    description:
+      'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services," co-authored by Beau Keyte and Drew Locher.',
+    url: 'https://www.keytegroup.com/how-we-think/complete-lean-enterprise-book/',
+    siteName: 'The Keyte Group',
+    images: [
+      {
+        url: 'https://www.keytegroup.com/images/complete-lean-enterprise-book.jpg',
+        width: 800,
+        height: 600,
+        alt: 'The Complete Lean Enterprise Book Cover'
+      }
+    ],
+    locale: 'en_US',
+    type: 'article'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Complete Lean Enterprise, 2nd edition - Keyte Group',
+    description:
+      'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services."',
+    images: [
+      'https://www.keytegroup.com/images/complete-lean-enterprise-book.jpg'
+    ]
+  },
+  alternates: {
+    canonical:
+      'https://www.keytegroup.com/how-we-think/complete-lean-enterprise-book/'
+  }
 }
 
 export default function Page() {
   return (
     <SubpageLayout>
+      <Script
+        id="complete-lean-enterprise-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Book',
+            name: 'The Complete Lean Enterprise: Value Stream Mapping for Office and Services, 2nd edition',
+            author: [
+              {
+                '@type': 'Person',
+                name: 'Beau Keyte'
+              },
+              {
+                '@type': 'Person',
+                name: 'Drew Locher'
+              }
+            ],
+            description:
+              'An updated version of the bestselling book that won a Shingo Prize for Excellence in Manufacturing Research. The second edition expands beyond the "tools focus" to challenge your organization to think and act differently.',
+            publisher: {
+              '@type': 'Organization',
+              name: 'Routledge'
+            },
+            url: 'https://www.keytegroup.com/how-we-think/complete-lean-enterprise-book/',
+            mainEntityOfPage:
+              'https://www.keytegroup.com/how-we-think/complete-lean-enterprise-book/'
+          })
+        }}
+      />
       <div className="foundation-row">
         <div id="headerdots">
           <img src="/images/headerdots.png" alt="" role="presentation" />
@@ -19,112 +84,182 @@ export default function Page() {
               <div className="twelve columns">
                 <div className="eight columns">
                   <div id="breadcrumbs">
-                    <a href="/index">Home</a> &gt; <a href="index">How We Think</a> &gt; <span className="current">Creating the Complete Lean Enterprise</span>
+                    <a href="/index">Home</a> &gt;{' '}
+                    <a href="index">How We Think</a> &gt;{' '}
+                    <span className="current">
+                      The Complete Lean Enterprise
+                    </span>
                   </div>
-                  <h1>Creating the Complete Lean Enterprise</h1>
-                  <h2>Value Stream Management for Manufacturing and Service</h2>
-                  <p className="lead">Co-authored by Beau Keyte and Drew Locher, "Creating the Complete Lean Enterprise" provided a comprehensive guide to implementing value stream management across entire organizations, extending lean principles beyond the factory floor to encompass all business processes.</p>
-                  <h2>About the Book</h2>
-                  <p>Published as part of the Lean Enterprise Institute's series, this book addressed a critical gap in lean literature: how to create enterprise-wide transformation rather than isolated improvements. While many books focused on specific lean tools or manufacturing applications, "Creating the Complete Lean Enterprise" took a holistic approach to organizational transformation.</p>
-                  <h3>Key Themes</h3>
-                  <h4>Enterprise-Wide Value Streams</h4>
-                  <p>The book demonstrated how value streams extend beyond manufacturing to include all processes that deliver value to customers - from order entry and product development to customer service and support. This comprehensive view enabled organizations to optimize entire value delivery systems rather than individual departments.</p>
-                  <h4>Service Applications</h4>
-                  <p>While lean thinking originated in manufacturing, the book showed how value stream principles applied equally well to service industries. Case studies included healthcare, financial services, and government organizations, demonstrating the universal applicability of lean concepts.</p>
-                  <h4>Leadership and Culture</h4>
-                  <p>Technical tools alone don't create sustainable transformation. The book emphasized the leadership behaviors and cultural changes necessary to support enterprise-wide lean implementation, including the shift from functional optimization to value stream thinking.</p>
-                  <h4>Practical Implementation</h4>
-                  <p>Rather than theoretical concepts, the book provided practical guidance for implementing value stream management, including step-by-step processes, real-world examples, and common pitfalls to avoid.</p>
-                  <h2>Core Concepts</h2>
-                  <h3>Value Stream Management</h3>
-                  <p>The book introduced value stream management as a comprehensive approach to organizing and improving work. This went beyond value stream mapping to include:</p>
+                  <h1>The Complete Lean Enterprise, 2nd edition</h1>
+                  <h3>Guiding Organizational Transformation</h3>
+                  <p className="lead">
+                    THE COMPLETE LEAN ENTERPRISE: Value Stream Mapping for
+                    Office and Services, 2nd edition, co-authored by Beau Keyte
+                    and Drew Locher, is an updated version of the bestselling
+                    book that won a Shingo Prize for Excellence in Manufacturing
+                    Research. The second edition expands beyond the "tools
+                    focus" to challenge your organization to think and act
+                    differently in order to change the culture of your
+                    organization as you become more effective and efficient.
+                  </p>
+
+                  <h4>This updated edition of a Shingo Prize Winner:</h4>
                   <ul>
-                    <li>Value stream organization structures</li>
-                    <li>Performance measurement systems</li>
-                    <li>Improvement processes</li>
-                    <li>Leadership development</li>
+                    <li>
+                      Provides a robust step-by-step approach for implementing
+                      Lean initiatives in the service industry and office
+                      environments.
+                    </li>
+                    <li>
+                      Features new critical steps in planning and preparing for
+                      VSM events.
+                    </li>
+                    <li>
+                      Includes new content and examples from the service
+                      industry, including healthcare.
+                    </li>
+                    <li>
+                      Details methods for engaging an entire organization in
+                      continuous improvement by focusing on socialization.
+                    </li>
+                    <li>
+                      Discusses the use of experiments to "learn your way" to a
+                      future state.
+                    </li>
+                    <li>
+                      Provides examples of tiered visual management and
+                      demonstrates the principles of a lean management system.
+                    </li>
                   </ul>
-                  <h3>The Complete Enterprise</h3>
-                  <p>A "complete" lean enterprise was defined as one where:</p>
-                  <ul>
-                    <li>All processes are organized around value streams</li>
-                    <li>Improvement is continuous and systematic</li>
-                    <li>Leadership supports and drives transformation</li>
-                    <li>Culture embraces lean thinking principles</li>
-                    <li>Results are sustained over time</li>
-                  </ul>
-                  <h3>Implementation Framework</h3>
-                  <p>The book provided a structured framework for enterprise transformation:</p>
-                  <ol>
-                    <li><strong>Assessment</strong> - Understanding current state and readiness</li>
-                    <li><strong>Vision</strong> - Creating a compelling future state</li>
-                    <li><strong>Strategy</strong> - Developing implementation approach</li>
-                    <li><strong>Execution</strong> - Implementing changes systematically</li>
-                    <li><strong>Sustainment</strong> - Embedding new ways of working</li>
-                  </ol>
-                  <h2>Real-World Applications</h2>
-                  <p>The book featured detailed case studies from various industries, showing how organizations successfully implemented enterprise-wide lean transformation:</p>
-                  <h3>Manufacturing Case Study</h3>
-                  <p>A mid-sized manufacturer transformed from functional silos to value stream organization, reducing lead times by 75% and improving customer satisfaction while maintaining profitability during market downturns.</p>
-                  <h3>Healthcare Application</h3>
-                  <p>A regional health system applied value stream thinking to patient care processes, reducing wait times, improving quality outcomes, and increasing staff satisfaction through better work design.</p>
-                  <h3>Service Industry Example</h3>
-                  <p>A financial services company redesigned its loan processing value stream, cutting approval times from weeks to days while improving accuracy and customer experience.</p>
-                  <h2>Impact and Reception</h2>
-                  <p>The book became a standard reference for organizations undertaking enterprise-wide lean transformation. It was particularly valued for:</p>
-                  <ul>
-                    <li><strong>Practical Guidance</strong> - Actionable steps rather than theoretical concepts</li>
-                    <li><strong>Comprehensive Scope</strong> - Addressing entire enterprises rather than individual processes</li>
-                    <li><strong>Service Applications</strong> - Extending lean beyond manufacturing</li>
-                    <li><strong>Leadership Focus</strong> - Emphasizing the human side of transformation</li>
-                  </ul>
-                  <div className="testimonial-box">
-                    <blockquote>
-                      "This book provided the roadmap we needed to move beyond isolated improvements to true enterprise transformation. The practical examples and step-by-step guidance made the difference between success and failure."
-                    </blockquote>
-                    <cite>— Manufacturing CEO</cite>
-                  </div>
-                  <h2>Continuing Relevance</h2>
-                  <p>While business environments continue to evolve, the fundamental principles outlined in "Creating the Complete Lean Enterprise" remain relevant. The focus on value streams, enterprise-wide thinking, and systematic transformation provides a foundation that adapts to changing conditions.</p>
-                  <p>Organizations today face new challenges - digital transformation, remote work, supply chain disruption - but the core concepts of value stream management and enterprise-wide improvement remain as important as ever.</p>
-                  <h2>Key Takeaways</h2>
-                  <p>The book's enduring lessons include:</p>
-                  <ul>
-                    <li>Transformation must be enterprise-wide to achieve sustainable results</li>
-                    <li>Value streams provide the organizing principle for lean enterprises</li>
-                    <li>Leadership and culture are as important as tools and techniques</li>
-                    <li>Service applications require adaptation but follow the same principles</li>
-                    <li>Systematic implementation approaches increase success probability</li>
-                  </ul>
-                  <p>These insights continue to guide organizations seeking to create complete lean enterprises that can thrive in an increasingly complex and dynamic business environment.</p>
+
+                  <h4>Praise for The Complete Lean Enterprise:</h4>
+
+                  <blockquote>
+                    <p>
+                      "The Complete Lean Enterprise is an excellent tool to
+                      guide the enterprising manager to a new lean process
+                      solution. The step-by-step instructions are easy for the
+                      beginner to follow, and the lean examples, team exercises,
+                      and mapping tips add a credible voice of experience to the
+                      manuscript. And, best of all, 'It works!'"
+                    </p>
+                    <cite>
+                      — Kent Sears, Vice President Manufacturing Processes and
+                      Lean Implementation, General Motors Corporation
+                    </cite>
+                  </blockquote>
+
+                  <blockquote>
+                    <p>
+                      "This book is a must-read for leaders struggling to remove
+                      waste, reduce time, and improve responsiveness in
+                      white-collar processes. I expect to see well-worn copies
+                      of The Complete Lean Enterprise in offices everywhere. It
+                      deserves a spot next to Learning to See."
+                    </p>
+                    <cite>
+                      — Peter Ward, Professor of Operations Management, Fisher
+                      College of Business, Ohio State University
+                    </cite>
+                  </blockquote>
+
+                  <blockquote>
+                    <p>
+                      "Their method is practical, pragmatic and can easily be
+                      transferred to others. This is the book. This is the
+                      Rosetta stone for VSM."
+                    </p>
+                    <cite>
+                      — Tom Berghan, Manager, Lean Systems, Esterline Korry
+                    </cite>
+                  </blockquote>
+
+                  <blockquote>
+                    <p>
+                      "Beau and Drew have developed a strategic lean tool that
+                      connects the value stream management of manufacturing
+                      processes to the rest of the enterprise! This tool applies
+                      to Office and Manufacturing processes, providing a
+                      systematic approach to eliminate waste along the entire
+                      product delivering value stream."
+                    </p>
+                    <cite>— Ron Fardell, Director of Lean, Textron, Inc.</cite>
+                  </blockquote>
+
+                  <p>
+                    <a
+                      href="https://www.routledge.com/The-Complete-Lean-Enterprise-Value-Stream-Mapping-for-Office-and-Services-Second-Edition/Keyte-Locher/p/book/9781482206135"
+                      target="_blank"
+                    >
+                      Purchase The Complete Lean Enterprise, 2nd edition
+                    </a>
+                  </p>
+
+                  <p>
+                    For more information, visit{' '}
+                    <a
+                      href="https://www.routledge.com/The-Complete-Lean-Enterprise-Value-Stream-Mapping-for-Office-and-Services-Second-Edition/Keyte-Locher/p/book/9781482206135"
+                      target="_blank"
+                    >
+                      https://www.routledge.com/The-Complete-Lean-Enterprise-Value-Stream-Mapping-for-Office-and-Services-Second-Edition/Keyte-Locher/p/book/9781482206135
+                    </a>
+                  </p>
                 </div>
                 <div className="four columns sidebar">
                   <div className="ccm-image-block">
-                    <img src="/images/light-bulb.jpg" alt="Lean Enterprise Insights" />
-                    <p style={{"textAlign":"center","fontStyle":"italic","marginTop":"10px","lineHeight":"1.4"}}>
+                    <img
+                      src="/images/complete-lean-enterprise-book.jpg"
+                      alt="The Complete Lean Enterprise Book Cover"
+                    />
+                    <p
+                      style={{
+                        textAlign: 'center',
+                        fontStyle: 'italic',
+                        marginTop: '10px',
+                        lineHeight: '1.4'
+                      }}
+                    >
                       Comprehensive guide to enterprise-wide lean transformation
                     </p>
                   </div>
                   <h3>Book Details</h3>
                   <ul className="book-details">
-                    <li><strong>Authors:</strong> Beau Keyte &amp; Drew Locher</li>
-                    <li><strong>Publisher:</strong> Lean Enterprise Institute</li>
-                    <li><strong>Focus:</strong> Enterprise-wide transformation</li>
-                    <li><strong>Applications:</strong> Manufacturing &amp; Service</li>
+                    <li>
+                      <strong>Authors:</strong> Beau Keyte &amp; Drew Locher
+                    </li>
+                    <li>
+                      <strong>Edition:</strong> 2nd Edition
+                    </li>
+                    <li>
+                      <strong>Publisher:</strong> Routledge
+                    </li>
+                    <li>
+                      <strong>Focus:</strong> Service &amp; Office Environments
+                    </li>
                   </ul>
                   <h3>Related Resources</h3>
                   <ul className="sidebar-nav">
-                    <li><a href="perfecting-patient-journeys-book">Perfecting Patient Journeys</a></li>
-                    <li><a href="/what-we-did/value-stream-mapping">Value Stream Mapping</a></li>
-                    <li><a href="articles-and-thoughts">Articles and Thoughts</a></li>
+                    <li>
+                      <a href="perfecting-patient-journeys-book">
+                        Perfecting Patient Journeys
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/what-we-did/value-stream-mapping">
+                        Value Stream Mapping
+                      </a>
+                    </li>
+                    <li>
+                      <a href="articles-and-thoughts">Articles and Thoughts</a>
+                    </li>
                   </ul>
                   <h3>Key Concepts</h3>
                   <ul className="concept-list">
                     <li>Value Stream Management</li>
-                    <li>Enterprise Transformation</li>
-                    <li>Service Applications</li>
-                    <li>Leadership Development</li>
-                    <li>Cultural Change</li>
+                    <li>Service Industry Applications</li>
+                    <li>Office Environment Lean</li>
+                    <li>Organizational Culture</li>
+                    <li>Continuous Improvement</li>
                   </ul>
                 </div>
               </div>

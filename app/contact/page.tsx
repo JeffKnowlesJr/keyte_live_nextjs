@@ -4,12 +4,15 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Contact - Connect with Beau Keyte | Keyte Group',
-  description: 'Connect with Beau Keyte and the Keyte Group team. Learn about optimizing organizational performance and building new capacity using existing human resources.',
-  keywords: 'contact Beau Keyte, Keyte Group contact, lean consulting contact, organizational performance consulting, continuous improvement expert',
+  description:
+    'Connect with Beau Keyte for professional insights, industry support, and educational resources on continuous improvement and lean methodology.',
+  keywords:
+    'contact Beau Keyte, Keyte Group contact, industry support, teaching, writing, continuous improvement expert, professional insights',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
     title: 'Contact - Connect with Beau Keyte | Keyte Group',
-    description: 'Connect with Beau Keyte and learn about optimizing organizational performance and building new capacity.',
+    description:
+      'Connect with Beau Keyte for professional insights, industry support, and educational resources on continuous improvement.',
     url: 'https://www.keytegroup.com/contact/',
     siteName: 'The Keyte Group',
     images: [
@@ -17,21 +20,22 @@ export const metadata: Metadata = {
         url: 'https://www.keytegroup.com/images/treasure-chest.jpg',
         width: 210,
         height: 260,
-        alt: 'Realize the creative potential within your organization',
-      },
+        alt: 'Realize the creative potential within your organization'
+      }
     ],
     locale: 'en_US',
-    type: 'website',
+    type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Contact - Keyte Group',
-    description: 'Connect with Beau Keyte for organizational performance consulting',
-    images: ['https://www.keytegroup.com/images/treasure-chest.jpg'],
+    description:
+      'Connect with Beau Keyte for professional insights and industry support',
+    images: ['https://www.keytegroup.com/images/treasure-chest.jpg']
   },
   alternates: {
-    canonical: 'https://www.keytegroup.com/contact/',
-  },
+    canonical: 'https://www.keytegroup.com/contact/'
+  }
 }
 
 export default function Page() {
@@ -42,31 +46,35 @@ export default function Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ContactPage",
-            "name": "Contact Keyte Group",
-            "description": "Contact information and connection details for Beau Keyte and the Keyte Group team",
-            "url": "https://www.keytegroup.com/contact/",
-            "mainEntity": {
-              "@type": "Organization",
-              "name": "Keyte Group",
-              "founder": {
-                "@type": "Person",
-                "name": "Beau Keyte",
-                "jobTitle": "Founder and Continuous Improvement Expert",
-                "sameAs": "https://www.linkedin.com/in/beaukeyte"
+            '@context': 'https://schema.org',
+            '@type': 'ContactPage',
+            name: 'Contact Keyte Group',
+            description:
+              'Connect with Beau Keyte for professional insights, industry support, teaching, writing, and redefining continuous improvement methodologies',
+            url: 'https://www.keytegroup.com/contact/',
+            mainEntity: {
+              '@type': 'Organization',
+              name: 'Keyte Group',
+              founder: {
+                '@type': 'Person',
+                name: 'Beau Keyte',
+                jobTitle: 'Founder and Continuous Improvement Expert',
+                sameAs: 'https://www.linkedin.com/in/beaukeyte'
               },
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "contactType": "Professional Inquiry",
-                "url": "https://www.linkedin.com/in/beaukeyte"
+              contactPoint: {
+                '@type': 'ContactPoint',
+                contactType: 'Professional Inquiry',
+                url: 'https://www.linkedin.com/in/beaukeyte',
+                description:
+                  'Connect for industry support, teaching, writing, and professional insights'
               },
-              "areaServed": "Worldwide",
-              "serviceType": [
-                "Organizational Performance Optimization",
-                "Continuous Improvement Consulting", 
-                "Lean Methodology Training",
-                "Leadership Development"
+              areaServed: 'Worldwide',
+              serviceType: [
+                'Industry Support',
+                'Teaching and Writing',
+                'Continuous Improvement',
+                'Professional Insights',
+                'Lean Methodology'
               ]
             }
           })
@@ -82,21 +90,77 @@ export default function Page() {
             <div className="foundation-row">
               <div className="three columns hide-for-small">
                 <ul className="side-nav">
-                  <li className="active"><a href="/contact/">Contact</a></li>
+                  <li className="active">
+                    <a href="/contact/">Contact</a>
+                  </li>
                   <li className="divider"></li>
                 </ul>
-                <img className="ccm-image-block" alt="" src="/images/treasure-chest.jpg" width="210" height="260" />
-                <p><em>Realize the creative potential within your organization.</em></p>
+                <img
+                  className="ccm-image-block"
+                  alt=""
+                  src="/images/treasure-chest.jpg"
+                  width="210"
+                  height="260"
+                />
+                <p>
+                  <em>
+                    Discover professional insights and contemporary approaches
+                    to continuous improvement.
+                  </em>
+                </p>
               </div>
 
               <div className="nine columns">
                 <ul className="breadcrumbs">
-                  <li><a href="/">Home</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact</a>
+                  </li>
                 </ul>
                 <h1>Contact</h1>
-                <p>Learn about optimizing organizational performance and building new capacity using existing human resources.</p>
-                <p><a href="https://www.linkedin.com/in/beaukeyte" title="Connect on LinkedIn" target="_top">Connect with Beau Keyte on LinkedIn</a>.</p>
+                <h3>Professional Insights & Industry Support</h3>
+                <p>
+                  Beau Keyte shares professional insights, educational
+                  resources, and thought leadership on industry support,
+                  teaching, writing, and redefining continuous improvement
+                  methodologies.
+                </p>
+                <p>
+                  Whether you're interested in his latest publications, seeking
+                  industry insights, or exploring contemporary approaches to
+                  continuous improvement, Beau welcomes connections with
+                  professionals who value out-of-the-box thinking and critical
+                  analysis.
+                </p>
+                <div className="contact-options">
+                  <h4>Connect for:</h4>
+                  <ul>
+                    <li>
+                      <strong>Industry Support</strong> - Professional insights
+                      and guidance
+                    </li>
+                    <li>
+                      <strong>Teaching & Writing</strong> - Educational
+                      resources and publications
+                    </li>
+                    <li>
+                      <strong>Redesigning Continuous Improvement</strong> -
+                      Contemporary methodologies
+                    </li>
+                  </ul>
+                </div>
+                <p>
+                  <a
+                    href="https://www.linkedin.com/in/beaukeyte"
+                    title="Connect on LinkedIn"
+                    target="_top"
+                    className="button"
+                  >
+                    Connect with Beau Keyte on LinkedIn
+                  </a>
+                </p>
               </div>
             </div>
           </div>

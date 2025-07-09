@@ -6,12 +6,16 @@ import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'The Keyte Group - Industry Support, Teaching & Professional Insights',
-  description: 'Beau Keyte shares professional insights, educational resources, and thought leadership on continuous improvement, industry support, and organizational development.',
-  keywords: 'Beau Keyte, industry support, teaching, writing, continuous improvement education, lean methodology, organizational transformation',
+  description:
+    'Beau Keyte shares professional insights, educational resources, and thought leadership on industry support, teaching, writing, and redefining continuous improvement methodologies.',
+  keywords:
+    'Beau Keyte, industry support, teaching, writing, continuous improvement, lean methodology, professional insights, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'The Keyte Group - Industry Support & Professional Insights',
-    description: 'Beau Keyte shares professional insights, educational resources, and thought leadership on continuous improvement and organizational development.',
+    title:
+      'The Keyte Group - Industry Support, Teaching & Professional Insights',
+    description:
+      'Beau Keyte shares professional insights, educational resources, and thought leadership on industry support, teaching, writing, and redefining continuous improvement methodologies.',
     url: 'https://www.keytegroup.com/',
     siteName: 'The Keyte Group',
     images: [
@@ -19,21 +23,22 @@ export const metadata: Metadata = {
         url: 'https://www.keytegroup.com/images/Keyte_Group_logo_large.png',
         width: 800,
         height: 600,
-        alt: 'The Keyte Group Logo',
-      },
+        alt: 'The Keyte Group Logo'
+      }
     ],
     locale: 'en_US',
-    type: 'website',
+    type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Keyte Group',
-    description: 'Professional insights and educational resources on continuous improvement',
-    images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png'],
+    description:
+      'Professional insights and educational resources on industry support, teaching, and redefining continuous improvement',
+    images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']
   },
   alternates: {
-    canonical: 'https://www.keytegroup.com/',
-  },
+    canonical: 'https://www.keytegroup.com/'
+  }
 }
 
 export default function HomePage() {
@@ -44,28 +49,85 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Keyte Group",
-            "alternateName": "The Keyte Group",
-            "url": "https://www.keytegroup.com",
-            "logo": "https://www.keytegroup.com/images/Keyte_Group_logo_large.png",
-            "description": "Professional insights and educational resources for industry support, teaching, and continuous improvement methodologies",
-            "founder": {
-              "@type": "Person",
-              "name": "Beau Keyte",
-              "jobTitle": "Founder and Continuous Improvement Expert",
-              "alumniOf": "University of Michigan",
-              "sameAs": "https://www.linkedin.com/in/beaukeyte"
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'Keyte Group',
+            alternateName: 'The Keyte Group',
+            url: 'https://www.keytegroup.com',
+            logo: 'https://www.keytegroup.com/images/Keyte_Group_logo_large.png',
+            description:
+              'Professional insights and educational resources for industry support, teaching, writing, and redefining continuous improvement methodologies.',
+            founder: {
+              '@type': 'Person',
+              name: 'Beau Keyte',
+              jobTitle: 'Founder and Continuous Improvement Expert',
+              alumniOf: 'University of Michigan',
+              sameAs: 'https://www.linkedin.com/in/beaukeyte'
             },
-            "sameAs": [
-              "https://www.linkedin.com/in/beaukeyte"
+            sameAs: ['https://www.linkedin.com/in/beaukeyte'],
+            knowsAbout: [
+              'Industry Support',
+              'Teaching and Writing',
+              'Continuous Improvement',
+              'Lean Methodology',
+              'Critical Thinking',
+              'Coaching',
+              'Professional Insights'
             ],
-            "knowsAbout": ["Lean Methodology", "Continuous Improvement", "Industry Support", "Teaching and Writing", "Organizational Development"]
+            serviceArea: {
+              '@type': 'Place',
+              name: 'United States'
+            },
+            hasOfferCatalog: {
+              '@type': 'OfferCatalog',
+              name: 'Professional Services and Resources',
+              itemListElement: [
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'Service',
+                    name: '10-Minute Short Stops',
+                    description:
+                      'Short online presentations designed to help organizations explore strategies for improvement'
+                  }
+                },
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'Service',
+                    name: 'Industry Support',
+                    description:
+                      'Professional insights and guidance for industry professionals'
+                  }
+                },
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'Service',
+                    name: 'Teaching and Writing',
+                    description:
+                      'Educational resources and publications on continuous improvement'
+                  }
+                },
+                {
+                  '@type': 'Offer',
+                  itemOffered: {
+                    '@type': 'Book',
+                    name: 'The Complete Lean Enterprise, 2nd edition',
+                    author: {
+                      '@type': 'Person',
+                      name: 'Beau Keyte'
+                    },
+                    description:
+                      'Comprehensive guide to lean enterprise transformation'
+                  }
+                }
+              ]
+            }
           })
         }}
       />
-      
+
       <div className="foundation-row">
         <div id="headerdots">
           <img src="/images/headerdots.png" alt="" role="presentation" />
@@ -73,6 +135,13 @@ export default function HomePage() {
         <div className="eleven columns centered">
           <div id="maincontent" className="content">
             <HomeSlider />
+            <div className="foundation-row">
+              <div className="eleven columns centered">
+                <h1>The Keyte Group</h1>
+                <h2>Professional Insights, Teaching & Industry Support</h2>
+                <h3>Redefining Continuous Improvement</h3>
+              </div>
+            </div>
             <FeaturedContent />
           </div>
         </div>
@@ -80,7 +149,6 @@ export default function HomePage() {
     </MainLayout>
   )
 }
-
 
 /*
 
