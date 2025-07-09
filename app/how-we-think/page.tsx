@@ -231,13 +231,7 @@ export default function Page() {
                     <cite> Senior executive, service industry</cite>
                   </blockquote>
                 </div>
-                <div className="cta-section">
-                  <p>
-                    <a href="/what-we-do/" className="button">
-                      Learn more about transforming your organization.
-                    </a>
-                  </p>
-                </div>
+
               </div>
             </div>
           </div>

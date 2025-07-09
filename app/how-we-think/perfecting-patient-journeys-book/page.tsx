@@ -5,14 +5,14 @@ import Script from 'next/script'
 export const metadata: Metadata = {
   title: 'Perfecting Patient Journeys - Keyte Group',
   description:
-    'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts. This guide is for leaders of healthcare organizations looking to implement lean thinking and improve the quality and safety of healthcare delivery.',
+    'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts. This guide is for leaders of healthcare organizations looking to implement lean thinking and improve the quality and safety of healthcare delivery. Explore the remarkable results achieved by implementing lean thinking in healthcare, including reduced staff turnover, shorter emergency department stays, increased patient satisfaction, and more.',
   keywords:
-    'Perfecting Patient Journeys, healthcare, lean thinking, quality improvement, patient care, healthcare delivery, book, co-authors, Beau Keyte',
+    'Perfecting Patient Journeys, healthcare, lean thinking, quality improvement, patient care, healthcare delivery, book, co-authors, Beau Keyte, industry support, teaching, writing, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
     title: 'Perfecting Patient Journeys - Keyte Group',
     description:
-      'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts. This guide is for leaders of healthcare organizations looking to implement lean thinking and improve the quality and safety of healthcare delivery.',
+      'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts. This guide is for leaders of healthcare organizations looking to implement lean thinking and improve the quality and safety of healthcare delivery. Explore the remarkable results achieved by implementing lean thinking in healthcare, including reduced staff turnover, shorter emergency department stays, increased patient satisfaction, and more.',
     url: 'https://www.keytegroup.com/how-we-think/perfecting-patient-journeys-book/',
     siteName: 'The Keyte Group',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Perfecting Patient Journeys - Keyte Group',
     description:
-      'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts.',
+      'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts. This guide is for leaders of healthcare organizations looking to implement lean thinking and improve the quality and safety of healthcare delivery.',
     images: [
       'https://www.keytegroup.com/images/perfecting-patient-journeys-book.jpg'
     ]
@@ -87,7 +87,7 @@ export default function Page() {
               }
             ],
             description:
-              'A guide for leaders of healthcare organizations who want to implement lean thinking in their organizations with all of the improvement in the quality and safety that it brings to the delivery of healthcare.',
+              'A guide for leaders of healthcare organizations who want to implement lean thinking in their organizations with all of the improvement in the quality and safety that it brings to the delivery of healthcare. Part of Beau Keyte\'s professional insights and industry support through teaching and writing.',
             publisher: {
               '@type': 'Organization',
               name: 'Lean Enterprise Institute'

@@ -85,13 +85,13 @@ export default function Page() {
                   </li>
                   <li className="divider"></li>
                   <li>
-                    <a href="value-stream-mapping" target="_self" className="">
+                    <a href="/what-we-did/value-stream-mapping" target="_self" className="">
                       Value Stream Mapping
                     </a>
                   </li>
                   <li>
                     <a
-                      href="collaborative-learning"
+                      href="/what-we-did/collaborative-learning"
                       target="_self"
                       className=""
                     >
@@ -99,12 +99,12 @@ export default function Page() {
                     </a>
                   </li>
                   <li>
-                    <a href="a3-thinking" target="_self" className="">
+                    <a href="/what-we-did/a3-thinking" target="_self" className="">
                       A3 Thinking
                     </a>
                   </li>
                   <li className="active">
-                    <a href="leadership-coaching" target="_self" className="">
+                    <a href="/what-we-did/leadership-coaching" target="_self" className="">
                       Leadership Coaching
                     </a>
                   </li>

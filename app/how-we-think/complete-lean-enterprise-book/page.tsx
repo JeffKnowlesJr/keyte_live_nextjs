@@ -5,14 +5,14 @@ import Script from 'next/script'
 export const metadata: Metadata = {
   title: 'The Complete Lean Enterprise, 2nd edition - Keyte Group',
   description:
-    'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services," co-authored by Beau Keyte and Drew Locher. This updated version provides a step-by-step approach for implementing Lean initiatives in service and office environments.',
+    'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services," co-authored by Beau Keyte and Drew Locher. This updated version provides a step-by-step approach for implementing Lean initiatives in service and office environments, with a focus on transforming organizational culture for greater effectiveness and efficiency.',
   keywords:
-    'The Complete Lean Enterprise, 2nd edition, Beau Keyte, Drew Locher, Lean initiatives, service industry, office environments, organizational culture, continuous improvement, value stream mapping',
+    'The Complete Lean Enterprise, 2nd edition, Beau Keyte, Drew Locher, Lean initiatives, service industry, office environments, organizational culture, continuous improvement, value stream mapping, industry support, teaching, writing, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
     title: 'The Complete Lean Enterprise, 2nd edition - Keyte Group',
     description:
-      'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services," co-authored by Beau Keyte and Drew Locher.',
+      'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services," co-authored by Beau Keyte and Drew Locher. This updated version provides a step-by-step approach for implementing Lean initiatives in service and office environments, with a focus on transforming organizational culture for greater effectiveness and efficiency.',
     url: 'https://www.keytegroup.com/how-we-think/complete-lean-enterprise-book/',
     siteName: 'The Keyte Group',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'The Complete Lean Enterprise, 2nd edition - Keyte Group',
     description:
-      'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services."',
+      'Explore the 2nd edition of "The Complete Lean Enterprise: Value Stream Mapping for Office and Services," co-authored by Beau Keyte and Drew Locher.',
     images: [
       'https://www.keytegroup.com/images/complete-lean-enterprise-book.jpg'
     ]
@@ -63,7 +63,7 @@ export default function Page() {
               }
             ],
             description:
-              'An updated version of the bestselling book that won a Shingo Prize for Excellence in Manufacturing Research. The second edition expands beyond the "tools focus" to challenge your organization to think and act differently.',
+              'An updated version of the bestselling book that won a Shingo Prize for Excellence in Manufacturing Research. The second edition expands beyond the "tools focus" to challenge your organization to think and act differently. Part of Beau Keyte\'s professional insights and industry support through teaching and writing.',
             publisher: {
               '@type': 'Organization',
               name: 'Routledge'

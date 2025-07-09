@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     'Links to articles, blog posts, webinars, etc that contain ideas and thoughts to make your business better by serving customers and clients more efficiently and effectively.',
   keywords:
-    'Transformational thinking, opinion pieces, articles, blog posts, Beau Keyte, supply chain, lean principles, scientific thinking, leadership standard work, healthcare, pandemic response',
+    'Transformational thinking, opinion pieces, articles, blog posts, Beau Keyte, supply chain, lean principles, scientific thinking, leadership standard work, healthcare, pandemic response, industry support, teaching, writing, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
     title: 'Articles and Thoughts - Keyte Group',
@@ -50,7 +50,7 @@ export default function Page() {
             '@type': 'CollectionPage',
             name: 'Articles and Thoughts',
             description:
-              'Links to articles, blog posts, webinars, etc that contain ideas and thoughts to make your business better by serving customers and clients more efficiently and effectively.',
+              'Links to articles, blog posts, webinars, etc that contain ideas and thoughts to make your business better by serving customers and clients more efficiently and effectively. Part of Beau Keyte\'s professional insights and industry support through teaching and writing.',
             author: {
               '@type': 'Person',
               name: 'Beau Keyte'

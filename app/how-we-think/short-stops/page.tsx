@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description:
     "Ten-minute lean transformation insights by Beau Keyte to boost your organization's strategic advantage and get you on a faster track in adapting to the new reality of the post pandemic era.",
   keywords:
-    'Short Stops, post-pandemic era, organizational insights, problem-solving, leadership, hidden capacity, social side of change, Beau Keyte',
+    'Short Stops, post-pandemic era, organizational insights, problem-solving, leadership, hidden capacity, social side of change, Beau Keyte, industry support, teaching, writing, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
     title: 'Short Stops: Building For The Post Pandemic Era - Keyte Group',
@@ -50,7 +50,7 @@ export default function Page() {
             '@type': 'CollectionPage',
             name: 'Short Stops: Building for the Post Pandemic Era',
             description:
-              "Ten-minute lean transformation insights by Beau Keyte to boost your organization's strategic advantage and get you on a faster track in adapting to the new reality of the post pandemic era.",
+              "Ten-minute lean transformation insights by Beau Keyte to boost your organization's strategic advantage and get you on a faster track in adapting to the new reality of the post pandemic era. Part of Beau Keyte's professional insights and industry support through teaching and writing.",
             author: {
               '@type': 'Person',
               name: 'Beau Keyte'

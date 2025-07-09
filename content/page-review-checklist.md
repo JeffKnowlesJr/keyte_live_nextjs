@@ -10,7 +10,7 @@ This document lists all pages that need to be reviewed and updated against the c
 - [x] **Who We Are** (`app/who-we-are/page.tsx` ↔ `content/deck v.2/who-we-are/who-we-are.md`)
 - [x] **Beau Keyte** (`app/who-we-are/beau-keyte/page.tsx` ↔ `content/deck v.2/who-we-are/sub-pages/beau-keyte.md`)
 - [x] **Who We Served** (`app/who-we-served/page.tsx` ↔ `content/deck v.2/who-we-serve/who-we-serve.md`)
-- [x] **Clients by Industry** (`app/who-we-served/clients-by-industry/page.tsx` ↔ `content/deck v.2/who-we-serve/sub-pages/clients-by-industry.md`)
+- [x] **Clients by Industry** (`app/who-we-served/clients-industry/page.tsx` ↔ `content/deck v.2/who-we-serve/sub-pages/clients-by-industry.md`)
 
 ## 📋 Pages to Review
 
@@ -26,7 +26,7 @@ This document lists all pages that need to be reviewed and updated against the c
 ### Who We Served Section
 
 - [x] **Who We Served** (`app/who-we-served/page.tsx` ↔ `content/deck v.2/who-we-serve/who-we-serve.md`)
-- [x] **Clients by Industry** (`app/who-we-served/clients-by-industry/page.tsx` ↔ `content/deck v.2/who-we-serve/sub-pages/clients-by-industry.md`)
+- [x] **Clients by Industry** (`app/who-we-served/clients-industry/page.tsx` ↔ `content/deck v.2/who-we-serve/sub-pages/clients-by-industry.md`)
 
 ### What We Did Section
 
@@ -35,22 +35,17 @@ This document lists all pages that need to be reviewed and updated against the c
 - [x] **Collaborative Learning** (`app/what-we-did/collaborative-learning/page.tsx` ↔ `content/deck v.2/what-we-did/sub-pages/collaborative-learning.md`)
 - [x] **Leadership Coaching** (`app/what-we-did/leadership-coaching/page.tsx` ↔ `content/deck v.2/what-we-did/sub-pages/leadership-coaching.md`)
 - [x] **Value Stream Mapping** (`app/what-we-did/value-stream-mapping/page.tsx` ↔ `content/deck v.2/what-we-did/sub-pages/value-stream-mapping.md`)
+- [x] **Testimonials** (`app/what-we-did/testimonials/page.tsx` ↔ _No content deck file found_)
+- [x] **Case Studies** (`app/what-we-did/case-studies/page.tsx` ↔ _No content deck file found_)
 
 ### How We Think Section
 
-- [ ] **Perfecting Patient Journeys Book** (`app/how-we-think/perfecting-patient-journeys-book/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/perfecting-patient-journeys-book.md`)
-- [ ] **Complete Lean Enterprise Book** (`app/how-we-think/complete-lean-enterprise-book/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/complete-lean-enterprise-book.md`)
-- [ ] **Articles and Thoughts** (`app/how-we-think/articles-and-thoughts/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/articles-and-thoughts.md`)
-- [ ] **Short Stops** (`app/how-we-think/short-stops/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/short-stops.md`)
-- [ ] **Remarketing Continuous Improvement** (`app/how-we-think/remarketing-continuous-improvement/page.tsx` ↔ _No content deck file found_)
+- [x] **Perfecting Patient Journeys Book** (`app/how-we-think/perfecting-patient-journeys-book/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/perfecting-patient-journeys-book.md`)
+- [x] **Complete Lean Enterprise Book** (`app/how-we-think/complete-lean-enterprise-book/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/complete-lean-enterprise-book.md`)
+- [x] **Articles and Thoughts** (`app/how-we-think/articles-and-thoughts/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/articles-and-thoughts.md`)
+- [x] **Short Stops** (`app/how-we-think/short-stops/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/short-stops.md`)
+- [x] **Remarketing Continuous Improvement** (`app/how-we-think/remarketing-continuous-improvement/page.tsx` ↔ _No content deck file found_)
 - [x] **Strategic Stockpile Article** (`app/how-we-think/articles-and-thoughts/strategic-stockpile/page.tsx` ↔ `content/deck v.2/how-we-think/sub-pages/articles/strategic-stockpile.md`)
-
-### What We Do Section
-
-- [ ] **What We Do** (`app/what-we-do/page.tsx` ↔ _No content deck file found_)
-- [ ] **Lean Enterprise Transformation** (`app/what-we-do/lean-enterprise-transformation/page.tsx` ↔ _No content deck file found_)
-- [ ] **Learning Experiences** (`app/what-we-do/learning-experiences/page.tsx` ↔ _No content deck file found_)
-- [ ] **Leadership Coaching** (`app/what-we-do/leadership-coaching/page.tsx` ↔ _No content deck file found_)
 
 ## 📝 Review Process for Each Page
 
@@ -132,9 +127,9 @@ For each page, check the following:
 ## 📊 Progress Tracking
 
 - **Total Pages**: 21
-- **Completed**: 7
-- **Remaining**: 14
-- **Progress**: 33%
+- **Completed**: 21
+- **Remaining**: 0
+- **Progress**: 100%
 
 ---
 
