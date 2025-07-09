@@ -1,27 +1,102 @@
 # Canonicalization - redirect non-www to www
 https://keytegroup.com/* https://www.keytegroup.com/:splat 301!
 
+# Handle old .htm extensions
+/*.htm /:splat 301!
+/*.html /:splat 301!
+
 # Remove trailing slashes for consistency
 /*/ /:splat 301!
-
-# Remove .html extensions
-/*.html /:splat 301!
 
 # Remove /index redirects
 /index / 301!
 
-# Specific page redirects for SEO preservation
+# Handle old URLs that might still be indexed
+/who-we-are/beau-keyte/index.htm /who-we-are/beau-keyte 301!
+/who-we-are/beau-keyte/index.html /who-we-are/beau-keyte 301!
+/who-we-are/beau-keyte.htm /who-we-are/beau-keyte 301!
 /who-we-are/beau-keyte.html /who-we-are/beau-keyte 301!
+
+/who-we-are/drew-locher.htm /who-we-are/drew-locher 301!
 /who-we-are/drew-locher.html /who-we-are/drew-locher 301!
+/who-we-are/our-associates.htm /who-we-are/our-associates 301!
 /who-we-are/our-associates.html /who-we-are/our-associates 301!
 
+/what-we-did/case-studies.htm /what-we-did/case-studies 301!
+/what-we-did/case-studies.html /what-we-did/case-studies 301!
+/what-we-did/testimonials.htm /what-we-did/testimonials 301!
+/what-we-did/testimonials.html /what-we-did/testimonials 301!
+
+/who-we-served/clients-by-industry.htm /who-we-served/clients-industry 301!
 /who-we-served/clients-by-industry.html /who-we-served/clients-industry 301!
 
+/how-we-think/perfecting-patient-journeys-book.htm /how-we-think/perfecting-patient-journeys-book 301!
 /how-we-think/perfecting-patient-journeys-book.html /how-we-think/perfecting-patient-journeys-book 301!
+/how-we-think/complete-lean-enterprise-book.htm /how-we-think/complete-lean-enterprise-book 301!
 /how-we-think/complete-lean-enterprise-book.html /how-we-think/complete-lean-enterprise-book 301!
+/how-we-think/articles-and-thoughts.htm /how-we-think/articles-and-thoughts 301!
 /how-we-think/articles-and-thoughts.html /how-we-think/articles-and-thoughts 301!
+/how-we-think/short-stops.htm /how-we-think/short-stops 301!
 /how-we-think/short-stops.html /how-we-think/short-stops 301!
+/how-we-think/remarketing-continuous-improvement.htm /how-we-think/remarketing-continuous-improvement 301!
 /how-we-think/remarketing-continuous-improvement.html /how-we-think/remarketing-continuous-improvement 301!
+
+# Handle old root-level URLs
+/perfecting-patient-journeys-book /how-we-think/perfecting-patient-journeys-book 301!
+/complete-lean-enterprise-book /how-we-think/complete-lean-enterprise-book 301!
+/articles-and-thoughts /how-we-think/articles-and-thoughts 301!
+
+# Handle old what-we-do URLs (redirect to what-we-did)
+/what-we-do /what-we-did 301!
+/what-we-do/lean-enterprise-transformation /what-we-did 301!
+/what-we-do/leadership-coaching /what-we-did/leadership-coaching 301!
+/what-we-do/learning-experiences /what-we-did 301!
+
+# Handle old who-we-served URLs
+/who-we-served/clients-by-industry /who-we-served/clients-industry 301!
+
+# Specific redirects for URLs found in Search Console
+/how-we-think/complete-lean-enterprise-book/index.htm /how-we-think/complete-lean-enterprise-book 301!
+/how-we-think/perfecting-patient-journeys-book/index.htm /how-we-think/perfecting-patient-journeys-book 301!
+/index.php / 301!
+/index.htm / 301!
+/who-we-are/who-we-are/affiliates/index.htm /who-we-are 301!
+/contact-us/index.htm /contact 301!
+/what-we-do/collaborative-learning/index.htm /what-we-did/collaborative-learning 301!
+/how-we-think/presentations/index.htm /how-we-think 301!
+/what-we-do/a3-thinking/index.htm /what-we-did/a3-thinking 301!
+/how-we-think/short-stops/index.htm /how-we-think/short-stops 301!
+/what-we-do/value-stream-mapping/index.htm /what-we-did/value-stream-mapping 301!
+/who-we-are/affiliates/index.htm /who-we-are 301!
+/how-we-think/articles-and-thoughts/index.htm /how-we-think/articles-and-thoughts 301!
+/who-we-serve/clients-industry/index.htm /who-we-served/clients-industry 301!
+/who-we-serve/index.htm /who-we-served 301!
+/what-we-do/index.htm /what-we-did 301!
+/who-we-are/how-we-think/short-stops/index.htm /how-we-think/short-stops 301!
+/who-we-are/affiliates/ /who-we-are 301!
+/what-we-do/value-stream-mapping/ /what-we-did/value-stream-mapping 301!
+/how-we-think/articles-and-thoughts.htm /how-we-think/articles-and-thoughts 301!
+/how-we-think/articles-and-thoughts/perfecting-patient-journeys-book/index.htm /how-we-think/perfecting-patient-journeys-book 301!
+/index.php.htm / 301!
+/who-we-are/what-we-do/a3-thinking/index.htm /what-we-did/a3-thinking 301!
+/who-we-are/who-we-serve/clients-industry/index.htm /who-we-served/clients-industry 301!
+/who-we-are/how-we-think/index.htm /how-we-think 301!
+
+# Handle old contact URLs
+/contact-us /contact 301!
+/contact-us/ /contact 301!
+
+# Handle old who-we-serve URLs (redirect to who-we-served)
+/who-we-serve /who-we-served 301!
+/who-we-serve/ /who-we-served 301!
+
+# Handle old affiliate URLs
+/affiliates /who-we-are 301!
+/affiliates/ /who-we-are 301!
+
+# Handle old presentation URLs
+/presentations /how-we-think 301!
+/presentations/ /how-we-think 301!
 
 # SPA fallback for Next.js
 /* /index.html 200

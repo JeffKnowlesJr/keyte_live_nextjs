@@ -269,8 +269,8 @@ export default function Page() {
                 <div className="four columns sidebar">
                   <div className="ccm-image-block">
                     <img
-                      src="/images/perfecting-patient-journeys-book.jpg"
-                      alt="Perfecting Patient Journeys Book Cover"
+                      src="/images/71gPRR1JfXL._SL1500_.jpg"
+                      alt="Perfecting Patient Journeys Book Cover by Judy Worth, Tom Shuker, Beau Keyte, et al."
                     />
                     <p
                       style={{
@@ -314,7 +314,7 @@ export default function Page() {
                       </a>
                     </li>
                     <li>
-                      <a href="articles-and-thoughts">Articles and Thoughts</a>
+                      <a href="/how-we-think/articles-and-thoughts">Articles and Thoughts</a>
                     </li>
                   </ul>
                   <h3>Healthcare Applications</h3>

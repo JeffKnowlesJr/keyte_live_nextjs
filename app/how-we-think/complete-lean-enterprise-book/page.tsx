@@ -208,8 +208,8 @@ export default function Page() {
                 <div className="four columns sidebar">
                   <div className="ccm-image-block">
                     <img
-                      src="/images/complete-lean-enterprise-book.jpg"
-                      alt="The Complete Lean Enterprise Book Cover"
+                      src="/images/9781482206135.jpg"
+                      alt="The Complete Lean Enterprise Book Cover (2nd Edition) by Beau Keyte and Drew Locher"
                     />
                     <p
                       style={{
@@ -240,7 +240,7 @@ export default function Page() {
                   <h3>Related Resources</h3>
                   <ul className="sidebar-nav">
                     <li>
-                      <a href="perfecting-patient-journeys-book">
+                      <a href="/how-we-think/perfecting-patient-journeys-book">
                         Perfecting Patient Journeys
                       </a>
                     </li>
@@ -250,7 +250,7 @@ export default function Page() {
                       </a>
                     </li>
                     <li>
-                      <a href="articles-and-thoughts">Articles and Thoughts</a>
+                      <a href="/how-we-think/articles-and-thoughts">Articles and Thoughts</a>
                     </li>
                   </ul>
                   <h3>Key Concepts</h3>

@@ -84,7 +84,7 @@ export default function Page() {
                   <li className="divider"></li>
                   <li>
                     <a
-                      href="/perfecting-patient-journeys-book"
+                      href="/how-we-think/perfecting-patient-journeys-book"
                       target="_self"
                       className=""
                     >
