@@ -86,6 +86,16 @@ export default function Page() {
                   <li><a href="/how-we-think/short-stops" target="_self" className="">Short Stops</a></li>
                   <li className="active"><a href="/how-we-think/remarketing-continuous-improvement" target="_self" className="">Remarketing Continuous Improvement</a></li>
                 </ul>
+                <div className="ccm-image-block" style={{ textAlign: 'center', marginTop: '2rem' }}>
+                  <img
+                    src="/images/detour-sign.jpg"
+                    alt="Detour sign: Rethinking the path of continuous improvement"
+                    style={{ maxWidth: '140px', width: '100%', height: 'auto' }}
+                  />
+                  <div style={{ fontStyle: 'italic', color: '#666', marginTop: '0.5rem' }}>
+                    Sometimes the best way forward is a new direction.
+                  </div>
+                </div>
               </div>
               <div className="nine columns">
                 <ul className="breadcrumbs">
