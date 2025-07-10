@@ -3,16 +3,16 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'How We Think - Thought Leadership & Resources | Keyte Group',
+  title: 'How We Think - Keyte Group',
   description:
     'Discover how to foster organizational improvement in a complex and rapidly changing world. Learn about the importance of shared responsibility for thinking and problem-solving throughout an organization. Explore how engaging managers and workers directly can build internal capacity for continuous improvement.',
   keywords:
-    'lean methodology thought leadership, continuous improvement insights, Beau Keyte articles, lean enterprise book, organizational transformation philosophy',
+    'Keyte Group, organizational improvement, management, problem-solving, continuous improvement, innovation, diagnostic conversation',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'How We Think - Thought Leadership & Resources | Keyte Group',
+    title: 'How We Think - Keyte Group',
     description:
-      'Thought leadership on continuous improvement, lean methodology, and organizational transformation from Beau Keyte.',
+      'Discover how to foster organizational improvement in a complex and rapidly changing world.',
     url: 'https://www.keytegroup.com/how-we-think/',
     siteName: 'The Keyte Group',
     images: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How We Think - Keyte Group',
     description:
-      'Thought leadership on continuous improvement and lean methodology',
+      'Discover how to foster organizational improvement in a complex and rapidly changing world.',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']
   },
   alternates: {
@@ -48,9 +48,9 @@ export default function Page() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'CollectionPage',
-            name: 'How We Think - Thought Leadership',
+            name: 'How We Think',
             description:
-              'Collection of thought leadership content, articles, and resources on continuous improvement and lean methodology',
+              'Discover how to foster organizational improvement in a complex and rapidly changing world.',
             url: 'https://www.keytegroup.com/how-we-think/',
             author: {
               '@type': 'Person',
@@ -185,38 +185,24 @@ export default function Page() {
                     <a href="#">How We Think</a>
                   </li>
                 </ul>
-                <h1>How we Think</h1>
+                <h1>How We Think</h1>
                 <h3>Guiding Organizational Transformation</h3>
                 <p>
                   How, in a world of increasing complexity and rapid change, can
                   you create a capable organization? Capable of innovating not
-                  just to keep up but to get ahead? The best approach involves
-                  sharing responsibility for thinking and problem-solving across
-                  all levels of the organization.
+                  just to keep up but to get ahead? The best way: management shares, rather than owns, responsibility for thinking and problem-solving.
                 </p>
                 <p>
-                  While managers might be trained to address problems throughout
-                  the organization, maintaining expertise at every level for
-                  timely action is challenging. Expertise often comes from daily
-                  experience and exists throughout the organization. However,
-                  this expertise may be underutilized if operational staff are
-                  not encouraged to think, adapt, and innovate.
+                  Managers may have been trained, in theory, to solve problems at all levels of the organization, but they cannot remain sufficiently expert at every level for timely action. Expertise is built from daily experience. It resides in people at every level of an organization. But it goes untapped if managers expect too little of operational staff in terms of thinking, adapting, and innovating.
                 </p>
                 <p>
-                  Achieving continuous improvement requires enabling individuals
-                  to step back, assess issues and facts, experiment with
-                  solutions, and integrate effective practices continuously.
+                  The only way to achieve continuous improvement in an organization is for all of its people to rediscover what it means to step back, evaluate the issues and facts before them, experiment with solutions, and incorporate what works in practice. Continuously.
                 </p>
                 <p>
-                  Engaging managers and workers directly in defining critical
-                  business problems and building the internal capacity to solve
-                  them can be more effective than standardized training programs
-                  or best-practice checklists.
+                  Engage managers and workers directly in defining a fundamental, critical business problem and building the internal capacity to solve it. No ready-made certification course, no off-the-shelf workshop, no checklist of best practices has this same power to transform an organization.
                 </p>
                 <p>
-                  The process begins with a diagnostic conversation rather than
-                  a prescription, focusing on a process rather than a quick fix.
-                  Success is achieved when external support is no longer needed.
+                  Start not with a prescription but with a diagnostic conversation. Proceed not with a "fix" but a process. Success is achieved once the process is self-sufficient.
                 </p>
                 <div className="testimonial">
                   <h3>Testimonial</h3>
