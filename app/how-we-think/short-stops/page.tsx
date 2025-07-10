@@ -232,7 +232,7 @@ export default function Page() {
                 <p>
                   If you would like some assistance adapting and applying these
                   insights to your organization, please{' '}
-                  <a href="/contact">contact me</a> to arrange an "office hour"
+                  <a href="/contact/">contact me</a> to arrange an "office hour"
                   with your teams.
                 </p>
 
@@ -304,7 +304,7 @@ export default function Page() {
                 <p>
                   If you would like some assistance adapting and applying these
                   insights to your organization, please{' '}
-                  <a href="/contact">contact me</a> to arrange an "office hour"
+                  <a href="/contact/">contact me</a> to arrange an "office hour"
                   with your teams.
                 </p>
 

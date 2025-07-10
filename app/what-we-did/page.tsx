@@ -107,10 +107,10 @@ export default function Page() {
                 <ul className="side-nav">
                   <li className="active"><a href="/what-we-did/">What We Did</a></li>
                   <li className="divider"></li>
-                  <li><a href="/what-we-did/value-stream-mapping" target="_self" className="">Value Stream Mapping</a></li>
-                  <li><a href="/what-we-did/collaborative-learning" target="_self" className="">Collaborative Learning</a></li>
-                  <li><a href="/what-we-did/a3-thinking" target="_self" className="">A3 Thinking</a></li>
-                  <li><a href="/what-we-did/leadership-coaching" target="_self" className="">Leadership Coaching</a></li>
+                                  <li><a href="/what-we-did/value-stream-mapping/" target="_self" className="">Value Stream Mapping</a></li>
+                <li><a href="/what-we-did/collaborative-learning/" target="_self" className="">Collaborative Learning</a></li>
+                <li><a href="/what-we-did/a3-thinking/" target="_self" className="">A3 Thinking</a></li>
+                <li><a href="/what-we-did/leadership-coaching/" target="_self" className="">Leadership Coaching</a></li>
                 </ul>
                 <img className="ccm-image-block" alt="Light Bulb on Training Wheels" src="/images/light-bulb.jpg" width="210" height="240" />
                 <p><em>We help you think for a little while.</em></p>

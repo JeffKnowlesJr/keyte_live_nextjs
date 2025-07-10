@@ -108,7 +108,7 @@ export default function Page() {
                   <li className="divider"></li>
                   <li>
                     <a
-                      href="/how-we-think/perfecting-patient-journeys-book"
+                      href="/how-we-think/perfecting-patient-journeys-book/"
                       target="_self"
                       className=""
                     >
@@ -117,7 +117,7 @@ export default function Page() {
                   </li>
                   <li>
                     <a
-                      href="/how-we-think/complete-lean-enterprise-book"
+                      href="/how-we-think/complete-lean-enterprise-book/"
                       target="_self"
                       className=""
                     >
@@ -126,7 +126,7 @@ export default function Page() {
                   </li>
                   <li>
                     <a
-                      href="/how-we-think/articles-and-thoughts"
+                      href="/how-we-think/articles-and-thoughts/"
                       target="_self"
                       className=""
                     >
@@ -135,7 +135,7 @@ export default function Page() {
                     <ul>
                       <li>
                         <a
-                          href="/how-we-think/articles-and-thoughts/strategic-stockpile"
+                          href="/how-we-think/articles-and-thoughts/strategic-stockpile/"
                           target="_self"
                           className=""
                         >

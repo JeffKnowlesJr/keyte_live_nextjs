@@ -17,9 +17,9 @@ export default function FooterSubpage() {
             <div className="two columns mobile-one">
               <ul>
                 <li>
-                  <Link href="/who-we-are">Who We Are</Link>
+                  <Link href="/who-we-are/">Who We Are</Link>
                   <ul>
-                    <li><Link href="/who-we-are/beau-keyte">Beau Keyte</Link></li>
+                    <li><Link href="/who-we-are/beau-keyte/">Beau Keyte</Link></li>
                   </ul>
                 </li>
               </ul>
@@ -27,12 +27,12 @@ export default function FooterSubpage() {
             <div className="two columns mobile-one">
               <ul>
                 <li>
-                  <Link href="/what-we-did">What We Did</Link>
+                  <Link href="/what-we-did/">What We Did</Link>
                   <ul>
-                    <li><Link href="/what-we-did/value-stream-mapping">Value Stream Mapping</Link></li>
-                    <li><Link href="/what-we-did/collaborative-learning">Collaborative Learning</Link></li>
-                    <li><Link href="/what-we-did/a3-thinking">A3 Thinking</Link></li>
-                    <li><Link href="/what-we-did/leadership-coaching">Leadership Coaching</Link></li>
+                    <li><Link href="/what-we-did/value-stream-mapping/">Value Stream Mapping</Link></li>
+                    <li><Link href="/what-we-did/collaborative-learning/">Collaborative Learning</Link></li>
+                    <li><Link href="/what-we-did/a3-thinking/">A3 Thinking</Link></li>
+                    <li><Link href="/what-we-did/leadership-coaching/">Leadership Coaching</Link></li>
                   </ul>
                 </li>
               </ul>
@@ -40,9 +40,9 @@ export default function FooterSubpage() {
             <div className="two columns mobile-one">
               <ul>
                 <li>
-                  <Link href="/who-we-served">Who We Have Served</Link>
+                  <Link href="/who-we-served/">Who We Have Served</Link>
                   <ul>
-                    <li><Link href="/who-we-served/clients-industry">Clients By Industry</Link></li>
+                    <li><Link href="/who-we-served/clients-industry/">Clients By Industry</Link></li>
                   </ul>
                 </li>
               </ul>
@@ -50,13 +50,13 @@ export default function FooterSubpage() {
             <div className="two columns mobile-one">
               <ul>
                 <li>
-                  <Link href="/how-we-think">How we Think</Link>
+                  <Link href="/how-we-think/">How we Think</Link>
                   <ul>
-                    <li><Link href="/how-we-think/perfecting-patient-journeys-book">Perfecting Patient Journeys Book</Link></li>
-                    <li><Link href="/how-we-think/complete-lean-enterprise-book">Complete Lean Enterprise Book</Link></li>
-                    <li><Link href="/how-we-think/articles-and-thoughts">Articles and thoughts</Link></li>
-                    <li><Link href="/how-we-think/short-stops">Short Stops</Link></li>
-                    <li><Link href="/how-we-think/remarketing-continuous-improvement">Remarketing Continuous Improvement</Link></li>
+                    <li><Link href="/how-we-think/perfecting-patient-journeys-book/">Perfecting Patient Journeys Book</Link></li>
+                    <li><Link href="/how-we-think/complete-lean-enterprise-book/">Complete Lean Enterprise Book</Link></li>
+                    <li><Link href="/how-we-think/articles-and-thoughts/">Articles and thoughts</Link></li>
+                    <li><Link href="/how-we-think/short-stops/">Short Stops</Link></li>
+                    <li><Link href="/how-we-think/remarketing-continuous-improvement/">Remarketing Continuous Improvement</Link></li>
                   </ul>
                 </li>
               </ul>
