@@ -67,6 +67,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+                {/* Google Analytics */}
+                <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F3304DQTX3"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-F3304DQTX3', {
+              page_title: document.title,
+              page_location: window.location.href
+            });
+          `}
+        </Script>
         <link rel="icon" href="/keyte_small_dgq_icon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         {/* Foundation CSS Framework */}
@@ -100,22 +116,7 @@ export default function RootLayout({
         }} />
       </head>
       <body id="page" className="off-canvas slide-nav">
-        {/* Google Analytics */}
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
-              page_title: document.title,
-              page_location: window.location.href
-            });
-          `}
-        </Script>
+
         {children}
       </body>
     </html>
