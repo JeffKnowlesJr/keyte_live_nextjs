@@ -3,24 +3,24 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Short Stops: Building For The Post Pandemic Era - Keyte Group',
+  title: 'Short Stops: Building For The Post Pandemic Era',
   description:
-    "Ten-minute lean transformation insights by Beau Keyte to boost your organization's strategic advantage and get you on a faster track in adapting to the new reality of the post pandemic era.",
+    'Explore "Short Stops," a collection of insights and strategies for building organizational resilience in the post-pandemic era. Learn practical approaches for adapting to new challenges and opportunities.',
   keywords:
-    'Short Stops, post-pandemic era, organizational insights, problem-solving, leadership, hidden capacity, social side of change, Beau Keyte, industry support, teaching, writing, critical thinking, coaching',
+    'Short Stops, post-pandemic era, organizational resilience, adaptation strategies, Beau Keyte, industry support, teaching, writing, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Short Stops: Building For The Post Pandemic Era - Keyte Group',
+    title: 'Short Stops: Building For The Post Pandemic Era',
     description:
-      "Ten-minute lean transformation insights by Beau Keyte to boost your organization's strategic advantage and get you on a faster track in adapting to the new reality of the post pandemic era.",
+      'Explore "Short Stops," a collection of insights and strategies for building organizational resilience in the post-pandemic era. Learn practical approaches for adapting to new challenges and opportunities.',
     url: 'https://www.keytegroup.com/how-we-think/short-stops/',
     siteName: 'The Keyte Group',
     images: [
       {
-        url: 'https://www.keytegroup.com/images/10_minute_short_stops.png',
+        url: 'https://www.keytegroup.com/images/Keyte_Group_logo_large.png',
         width: 800,
         height: 600,
-        alt: 'Short Stops: Building for the Post Pandemic Era'
+        alt: 'The Keyte Group Logo'
       }
     ],
     locale: 'en_US',
@@ -28,10 +28,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Short Stops: Building For The Post Pandemic Era - Keyte Group',
+    title: 'Short Stops: Building For The Post Pandemic Era',
     description:
-      "Ten-minute lean transformation insights to boost your organization's strategic advantage.",
-    images: ['https://www.keytegroup.com/images/10_minute_short_stops.png']
+      'Insights and strategies for building organizational resilience in the post-pandemic era.',
+    images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']
   },
   alternates: {
     canonical: 'https://www.keytegroup.com/how-we-think/short-stops/'

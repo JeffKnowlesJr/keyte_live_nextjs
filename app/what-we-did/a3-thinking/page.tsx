@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'A3 Thinking for Organizational Transformation - Keyte Group',
+  title: 'A3 Thinking for Organizational Transformation',
   description:
     'Discover how A3 Thinking empowers organizations to solve problems, align teams, and drive continuous improvement. Keyte Group specializes in building internal problem-solving capacity for sustainable results.',
   keywords:
     'A3 Thinking, organizational transformation, problem solving, continuous improvement, Keyte Group, lean methodology, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'A3 Thinking for Organizational Transformation - Keyte Group',
+    title: 'A3 Thinking for Organizational Transformation',
     description:
       'Discover how A3 Thinking empowers organizations to solve problems, align teams, and drive continuous improvement. Keyte Group specializes in building internal problem-solving capacity for sustainable results.',
     url: 'https://www.keytegroup.com/what-we-did/a3-thinking/',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'A3 Thinking for Organizational Transformation - Keyte Group',
+    title: 'A3 Thinking for Organizational Transformation',
     description:
       'A3 Thinking empowers organizations to solve problems, align teams, and drive continuous improvement.',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']

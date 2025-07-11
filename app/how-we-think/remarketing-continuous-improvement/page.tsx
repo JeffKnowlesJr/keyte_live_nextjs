@@ -3,12 +3,12 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Remarketing Continuous Improvement - Keyte Group',
+  title: 'Remarketing Continuous Improvement',
   description: 'Explore Beau Keyte\'s work on remarketing continuous improvement through the Future of People at Work (FOPAW) conference. Learn about contemporary gaps in the continuous improvement industry and efforts to reengage organizations with lean principles.',
   keywords: 'remarketing continuous improvement, FOPAW, Future of People at Work, lean principles, continuous improvement industry, marketing and branding, Beau Keyte, industry support, teaching, writing, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Remarketing Continuous Improvement - Keyte Group',
+    title: 'Remarketing Continuous Improvement',
     description: 'Explore Beau Keyte\'s work on remarketing continuous improvement through the Future of People at Work (FOPAW) conference. Learn about contemporary gaps in the continuous improvement industry and efforts to reengage organizations with lean principles.',
     url: 'https://www.keytegroup.com/how-we-think/remarketing-continuous-improvement/',
     siteName: 'The Keyte Group',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Remarketing Continuous Improvement - Keyte Group',
+    title: 'Remarketing Continuous Improvement',
     description: 'Explore Beau Keyte\'s work on remarketing continuous improvement and contemporary gaps in the continuous improvement industry.',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']
   },

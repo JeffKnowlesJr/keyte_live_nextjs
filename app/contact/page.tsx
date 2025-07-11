@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Contact - Connect with Beau Keyte | Keyte Group',
+  title: 'Contact - Connect with Beau Keyte',
   description:
     'Connect with Beau Keyte for professional insights, industry support, and educational resources on continuous improvement and lean methodology.',
   keywords:
     'contact Beau Keyte, Keyte Group contact, industry support, teaching, writing, continuous improvement expert, professional insights',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Contact - Connect with Beau Keyte | Keyte Group',
+    title: 'Contact - Connect with Beau Keyte',
     description:
       'Connect with Beau Keyte for professional insights, industry support, and educational resources on continuous improvement.',
     url: 'https://www.keytegroup.com/contact/',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact - Keyte Group',
+    title: 'Contact',
     description:
       'Connect with Beau Keyte for professional insights and industry support',
     images: ['https://www.keytegroup.com/images/treasure-chest.jpg']

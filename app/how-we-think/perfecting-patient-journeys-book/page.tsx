@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Perfecting Patient Journeys - Keyte Group',
+  title: 'Perfecting Patient Journeys',
   description:
     'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts. This guide is for leaders of healthcare organizations looking to implement lean thinking and improve the quality and safety of healthcare delivery. Explore the remarkable results achieved by implementing lean thinking in healthcare, including reduced staff turnover, shorter emergency department stays, increased patient satisfaction, and more.',
   keywords:
     'Perfecting Patient Journeys, healthcare, lean thinking, quality improvement, patient care, healthcare delivery, book, co-authors, Beau Keyte, industry support, teaching, writing, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Perfecting Patient Journeys - Keyte Group',
+    title: 'Perfecting Patient Journeys',
     description:
       'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts. This guide is for leaders of healthcare organizations looking to implement lean thinking and improve the quality and safety of healthcare delivery. Explore the remarkable results achieved by implementing lean thinking in healthcare, including reduced staff turnover, shorter emergency department stays, increased patient satisfaction, and more.',
     url: 'https://www.keytegroup.com/how-we-think/perfecting-patient-journeys-book/',
@@ -28,16 +28,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Perfecting Patient Journeys - Keyte Group',
+    title: 'Perfecting Patient Journeys',
     description:
-      'Learn about the book "Perfecting Patient Journeys," co-authored by Beau Keyte with other experts. This guide is for leaders of healthcare organizations looking to implement lean thinking and improve the quality and safety of healthcare delivery.',
-    images: [
-      'https://www.keytegroup.com/images/perfecting-patient-journeys-book.jpg'
-    ]
+      'Lean thinking applied to healthcare delivery for improved quality and safety.',
+    images: ['https://www.keytegroup.com/images/perfecting-patient-journeys-book.jpg']
   },
   alternates: {
-    canonical:
-      'https://www.keytegroup.com/how-we-think/perfecting-patient-journeys-book/'
+    canonical: 'https://www.keytegroup.com/how-we-think/perfecting-patient-journeys-book/'
   }
 }
 

@@ -3,16 +3,16 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Collaborative Learning for Organizational Excellence - Keyte Group',
+  title: 'Collaborative Learning for Organizational Excellence',
   description:
-    'Discover how collaborative learning approaches help organizations build internal capacity for continuous improvement. Keyte Group specializes in team-based problem solving and knowledge transfer.',
+    'Discover how collaborative learning approaches drive organizational excellence and sustainable improvement. Keyte Group specializes in building learning organizations that continuously adapt and improve.',
   keywords:
-    'collaborative learning, organizational transformation, continuous improvement, team-based problem solving, knowledge transfer, Keyte Group',
+    'collaborative learning, organizational excellence, continuous improvement, learning organizations, Keyte Group, lean methodology',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Collaborative Learning for Organizational Excellence - Keyte Group',
+    title: 'Collaborative Learning for Organizational Excellence',
     description:
-      'Discover how collaborative learning approaches help organizations build internal capacity for continuous improvement. Keyte Group specializes in team-based problem solving and knowledge transfer.',
+      'Discover how collaborative learning approaches drive organizational excellence and sustainable improvement. Keyte Group specializes in building learning organizations that continuously adapt and improve.',
     url: 'https://www.keytegroup.com/what-we-did/collaborative-learning/',
     siteName: 'The Keyte Group',
     images: [
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Collaborative Learning for Organizational Excellence - Keyte Group',
+    title: 'Collaborative Learning for Organizational Excellence',
     description:
-      'Collaborative learning approaches help organizations build internal capacity for continuous improvement.',
+      'Collaborative learning approaches drive organizational excellence and sustainable improvement.',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']
   },
   alternates: {

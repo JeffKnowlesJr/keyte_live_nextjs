@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'How We Think - Keyte Group',
+  title: 'How We Think',
   description:
     'Discover how to foster organizational improvement in a complex and rapidly changing world. Learn about the importance of shared responsibility for thinking and problem-solving throughout an organization. Explore how engaging managers and workers directly can build internal capacity for continuous improvement.',
   keywords:
     'Keyte Group, organizational improvement, management, problem-solving, continuous improvement, innovation, diagnostic conversation',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'How We Think - Keyte Group',
+    title: 'How We Think',
     description:
       'Discover how to foster organizational improvement in a complex and rapidly changing world.',
     url: 'https://www.keytegroup.com/how-we-think/',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How We Think - Keyte Group',
+    title: 'How We Think',
     description:
       'Discover how to foster organizational improvement in a complex and rapidly changing world.',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']

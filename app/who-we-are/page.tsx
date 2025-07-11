@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Who We Are - Hands-On Problem Solvers | Keyte Group',
+  title: 'Who We Are - Hands-On Problem Solvers',
   description:
     'Learn about the hands-on problem-solving approach and network of experienced professionals in various disciplines, including lean strategies, enterprise transformations, and more.',
   keywords:
     'Keyte Group, hands-on problem solvers, management consulting, lean strategies, enterprise transformations, testimonials',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Who We Are - Hands-On Problem Solvers | Keyte Group',
+    title: 'Who We Are - Hands-On Problem Solvers',
     description:
       'Learn about the hands-on problem-solving approach and network of experienced professionals in various disciplines, including lean strategies, enterprise transformations, and more.',
     url: 'https://www.keytegroup.com/who-we-are/',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Who We Are - Keyte Group',
+    title: 'Who We Are',
     description:
       'Seasoned practitioners specializing in lean methodology and organizational transformation',
     images: ['https://www.keytegroup.com/images/stopping-train.jpg']

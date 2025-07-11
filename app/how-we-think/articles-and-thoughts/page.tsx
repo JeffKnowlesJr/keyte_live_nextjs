@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Articles and Thoughts - Keyte Group',
+  title: 'Articles and Thoughts',
   description:
     'Links to articles, blog posts, webinars, etc that contain ideas and thoughts to make your business better by serving customers and clients more efficiently and effectively.',
   keywords:
     'Transformational thinking, opinion pieces, articles, blog posts, Beau Keyte, supply chain, lean principles, scientific thinking, leadership standard work, healthcare, pandemic response, industry support, teaching, writing, critical thinking, coaching',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Articles and Thoughts - Keyte Group',
+    title: 'Articles and Thoughts',
     description:
       'Links to articles, blog posts, webinars, etc that contain ideas and thoughts to make your business better by serving customers and clients more efficiently and effectively.',
     url: 'https://www.keytegroup.com/how-we-think/articles-and-thoughts/',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Articles and Thoughts - Keyte Group',
+    title: 'Articles and Thoughts',
     description:
       'Transformational thinking and practical insights for business improvement.',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']

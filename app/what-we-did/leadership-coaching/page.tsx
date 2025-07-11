@@ -3,17 +3,16 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Leadership Coaching for Organizational Transformation - Keyte Group',
+  title: 'Leadership Coaching for Organizational Transformation',
   description:
-    'Transform leadership from command and control to coaching and mentoring. Keyte Group helps develop high-performing teams and sustainable organizational change through leadership coaching.',
+    'Discover how leadership coaching builds internal capacity for continuous improvement and organizational transformation. Keyte Group specializes in developing leaders who can drive sustainable change.',
   keywords:
-    'leadership coaching, organizational transformation, coaching and mentoring, high-performing teams, sustainable change, Keyte Group',
+    'leadership coaching, organizational transformation, continuous improvement, leadership development, Keyte Group, lean methodology',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title:
-      'Leadership Coaching for Organizational Transformation - Keyte Group',
+    title: 'Leadership Coaching for Organizational Transformation',
     description:
-      'Transform leadership from command and control to coaching and mentoring. Keyte Group helps develop high-performing teams and sustainable organizational change through leadership coaching.',
+      'Discover how leadership coaching builds internal capacity for continuous improvement and organizational transformation. Keyte Group specializes in developing leaders who can drive sustainable change.',
     url: 'https://www.keytegroup.com/what-we-did/leadership-coaching/',
     siteName: 'The Keyte Group',
     images: [
@@ -29,10 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title:
-      'Leadership Coaching for Organizational Transformation - Keyte Group',
+    title: 'Leadership Coaching for Organizational Transformation',
     description:
-      'Transform leadership from command and control to coaching and mentoring for sustainable organizational change.',
+      'Leadership coaching builds internal capacity for continuous improvement and organizational transformation.',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']
   },
   alternates: {

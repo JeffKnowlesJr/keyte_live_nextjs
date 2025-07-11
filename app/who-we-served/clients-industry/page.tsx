@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Clients by Industry - Keyte Group',
+  title: 'Clients by Industry',
   description:
     'Explore our diverse client portfolio across healthcare, manufacturing, financial services, and administration industries.',
   keywords:
     'Keyte Group clients, healthcare, manufacturing, financial services, administration, industries, client list',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Clients by Industry - Keyte Group',
+    title: 'Clients by Industry',
     description:
       'Explore our diverse client portfolio across healthcare, manufacturing, financial services, and administration industries.',
     url: 'https://www.keytegroup.com/who-we-served/clients-industry/',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Clients by Industry - Keyte Group',
+    title: 'Clients by Industry',
     description:
       'Diverse client portfolio across healthcare, manufacturing, financial services, and administration',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']

@@ -3,12 +3,12 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'What We Did - Lean Transformation Services | Keyte Group',
+  title: 'What We Did - Lean Transformation Services',
   description: 'Discover our proven lean transformation services including value stream mapping, collaborative learning, A3 thinking, and leadership coaching for sustainable organizational change.',
   keywords: 'lean transformation, value stream mapping, collaborative learning, A3 thinking, leadership coaching, organizational change, continuous improvement services',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'What We Did - Lean Transformation Services | Keyte Group',
+    title: 'What We Did - Lean Transformation Services',
     description: 'Proven lean transformation services including value stream mapping, collaborative learning, and leadership coaching for sustainable organizational change.',
     url: 'https://www.keytegroup.com/what-we-did/',
     siteName: 'The Keyte Group',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'What We Did - Keyte Group',
+    title: 'What We Did',
     description: 'Lean transformation services for sustainable organizational change',
     images: ['https://www.keytegroup.com/images/light-bulb.jpg'],
   },

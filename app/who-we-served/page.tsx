@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Who We Served - Keyte Group',
+  title: 'Who We Served',
   description:
     'Discover the types of organizations that benefit from analytical approaches, training, facilitation, and leadership coaching. Explore how lean strategies and techniques improve work processes in healthcare, financial services, manufacturing, and office environments.',
   keywords:
     'Keyte Group, analytical services, training, facilitation, leadership coaching, lean strategies, healthcare, financial services, manufacturing, office environments, clients',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Who We Served - Keyte Group',
+    title: 'Who We Served',
     description:
       'Discover the types of organizations that benefit from analytical approaches, training, facilitation, and leadership coaching.',
     url: 'https://www.keytegroup.com/who-we-served/',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Who We Served - Keyte Group',
+    title: 'Who We Served',
     description:
       'Diverse client portfolio and lean transformation success stories',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']

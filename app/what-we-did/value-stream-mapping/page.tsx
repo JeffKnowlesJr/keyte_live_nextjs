@@ -3,14 +3,14 @@ import { Metadata } from 'next'
 import Script from 'next/script'
 
 export const metadata: Metadata = {
-  title: 'Value Stream Mapping (VSM) for Process Improvement - Keyte Group',
+  title: 'Value Stream Mapping (VSM) for Process Improvement',
   description:
     'Keyte Group is a thought-leader in Value Stream Mapping with 26 years of experience. VSM helps teams diagnose system performance issues and design better processes for improved customer value.',
   keywords:
     'value stream mapping, VSM, process improvement, lean methodology, organizational transformation, Keyte Group, thought-leader',
   authors: [{ name: 'Beau Keyte' }],
   openGraph: {
-    title: 'Value Stream Mapping (VSM) for Process Improvement - Keyte Group',
+    title: 'Value Stream Mapping (VSM) for Process Improvement',
     description:
       'Keyte Group is a thought-leader in Value Stream Mapping with 26 years of experience. VSM helps teams diagnose system performance issues and design better processes for improved customer value.',
     url: 'https://www.keytegroup.com/what-we-did/value-stream-mapping/',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Value Stream Mapping (VSM) for Process Improvement - Keyte Group',
+    title: 'Value Stream Mapping (VSM) for Process Improvement',
     description:
       'Thought-leader in Value Stream Mapping with 26 years of experience helping teams improve processes and customer value.',
     images: ['https://www.keytegroup.com/images/Keyte_Group_logo_large.png']
